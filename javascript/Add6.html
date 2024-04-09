@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #demo {
+      color: blue;
+      font-size: 85px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    #borderimg2 {
+      border: 20px solid transparent;
+      padding: 45px;
+      border-image: url("https://www.w3schools.com/cssref/border.png") 30
+        stretch;
+      text-align: center;
+      font-size: 25px;
+    }
+  </style>
+  <body>
+    <p id="demo"></p>
+    <p id="borderimg2">Here, the image is stretched to fill the area.</p>
+  </body>
+
+  <script>
+    document.getElementById("demo").innerHTML = 11 + 22;
+  </script>
+</html>

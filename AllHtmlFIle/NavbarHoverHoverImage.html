@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .dropdown-content {
+      display: none;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .image1:hover .image11,
+    .image2:hover .image12,
+    .image3:hover .image13 {
+      display: block;
+    }
+
+    .image12,
+    .image13,
+    .image11 {
+      display: none;
+      margin-left: 500px;
+    }
+
+    a {
+      display: block;
+    }
+  </style>
+  <body>
+    <div class="dropdown">
+      <p class="dropbtn" style="cursor: pointer">SHOP</p>
+      <div class="dropdown-content">
+        <a href="#" class="image1"
+          >All Around
+          <img
+            src="https://somoorish.com.au/admin/category/grid_1.webp"
+            style="height: 250px; width: 350px"
+            class="image11"
+          />
+        </a>
+        <a href="#" class="image2"
+          >Chocolate Delight
+          <img
+            src="https://somoorish.com.au/admin/category/grid-4.webp"
+            style="height: 250px; width: 350px"
+            class="image12"
+          />
+        </a>
+        <a href="#" class="image3"
+          >Pure Wellness
+          <img
+            src="https://somoorish.com.au/admin/category/Pure_Wellness_Chocolate%20Delight_Grid.webp"
+            style="height: 250px; width: 350px"
+            class="image13"
+          />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

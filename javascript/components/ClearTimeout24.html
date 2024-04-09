@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- [clearTimeout() method] -->
+    <button onclick="Start()">Start</button>
+    <button onclick="Stop()">Stop</button>
+
+
+<script>
+    var my;
+    
+    function Start(){
+        my=setTimeout(function(){
+document.write("<h1 style=text-align:center>Hiiii Vachan<h1>")
+        },2000)
+
+    }
+
+    function Stop(){
+        clearTimeout(my);
+        alert("TimeOutStop")
+
+}
+
+</script>
+</html>

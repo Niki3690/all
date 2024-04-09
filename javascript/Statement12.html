@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <button class="button is-link" onclick="hey()">Click Me!</button>
+
+    <h4 class="is-size-4" id="demo1"></h4>
+    <h4 class="is-size-4" id="demo2"></h4>
+  </body>
+
+  <script>
+    function hey() {
+      alert("Hey what do you print good morning ya good night??");
+      document.getElementById("demo1").innerHTML = "Goooood Morning!";
+      document.getElementById("demo2").innerHTML = "Goooood Night!";
+    }
+  </script>
+</html>

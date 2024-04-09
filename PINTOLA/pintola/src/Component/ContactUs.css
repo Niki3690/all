@@ -1,0 +1,34 @@
+.uss img {
+  width: 100%;
+  height: 450px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.can {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.fff {
+  padding-top: 23px;
+  display: flex;
+  gap: 15px;
+}
+
+.fass {
+  /* display: flex;
+  gap: 145px; */
+
+  display: grid;
+  grid-template-columns: 700px 500px;
+}
+
+.lll {
+  padding-top: 120px;
+  background-color: #fdf7f0;
+}
+
+.bun:hover {
+  background-color: #f06e27 !important;
+}

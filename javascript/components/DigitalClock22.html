@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body onload="Showtime()">
+    <!-- [Digital Clock using JavaScript] -->
+    <h1
+      class="is-size-1 has-text-centered"
+      style="
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 115px;
+        font-weight: 700;
+        color: #000000;
+      "
+    ></h1>
+  </body>
+
+  <script>
+    function Showtime() {
+      var d = new Date();
+      var h = d.getHours();
+      var m = d.getMinutes();
+      var s = d.getSeconds();
+      var session = "AM";
+
+      if (h > 12) {
+        h = h - 12;
+        // h=13-12=1
+      }
+
+      if (h >= 12) {
+        session = "PM";
+      }
+
+      h = h < 10 ? "0" + h : h;
+      m = m < 10 ? "0" + m : m;
+      s = s < 10 ? "0" + s : s;
+
+      var time = h + ":" + m + ":" + s + " " + session;
+      document.getElementsByTagName("h1")[0].innerText = time;
+      setTimeout(Showtime, 1000);
+    }
+  </script>
+</html>

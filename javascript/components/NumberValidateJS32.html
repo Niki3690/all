@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- [Validate number using JavaScript] -->
+
+    <label>Please Enter Your Number:</label><br />
+    <input class="input" placeholder="Number" type="text" onkeyup="val(this)" />
+
+    <div id="result"></div>
+
+    <script>
+      function val(elem) {
+        if (isNaN(elem.value)) {
+          document.getElementById("result").style.color = "blue";
+          document.getElementById("result").style.fontSize = "12px";
+          document.getElementById("result").innerText =
+            "Please Enter Numbers Only";
+        } else {
+          document.getElementById("result").innerText = "";
+          if (elem.value.length > 10) {
+            document.getElementById("result").innerText =
+              "Please Enter only 10 numbers";
+          } else {
+            document.getElementById("result").innerText = "";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

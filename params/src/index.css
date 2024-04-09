@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.sweet {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sweet img {
+  transition: all 0.6s;
+
+  width: 100%;
+}
+
+.sweet img:hover {
+  transform: scale(1.2);
+}
+
+.alll {
+  width: 450px;
+  overflow: hidden;
+
+  height: 320;
+}
+
+.alll img {
+  transition: all 0.6s;
+  width: 450px;
+  height: 320;
+}
+
+.alll img:hover {
+  transform: scale(1.1);
+}
+
+.set {
+  width: 100%;
+  overflow: hidden;
+}
+
+.set img {
+  transition: all 0.6s;
+  height: 620px;
+  width: 100%;
+}
+
+.set img:hover {
+  transform: scale(1.1);
+}
+
+.shop {
+  border: 1px solid white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 19px;
+  padding-right: 19px;
+  background-color: white;
+  font-size: 20;
+}
+
+.shop:hover {
+  background-color: #ad0047;
+  border: 1px solid white;
+  color: white !important;
+}
+
+.shopy {
+  overflow: hidden;
+  width: "100%";
+  height: "10px";
+}
+
+.shopy img {
+  transition: all 0.6s;
+  height: 27vh;
+  width: 100%;
+  object-fit: "cover";
+}
+
+.shopy img:hover {
+  transform: scale(1.1);
+}
+
+.nik:hover {
+  transform: scale(1.1);
+  transition: all 0.6s;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  width: 260px;
+  padding-left: 22px;
+}
+
+input::placeholder {
+  font-size: 20px;
+  color: #000000;
+}
+
+textarea {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  width: 550px;
+}
+
+textarea::placeholder {
+  font-size: 20px;
+  color: #000000;
+  padding-left: 18px;
+  padding-top: 10px;
+}
+
+.button p :hover {
+  font-weight: 800;
+}
+
+.button {
+  overflow: hidden;
+}
+
+.button:hover {
+  background-color: white !important;
+  border: 2px solid #ad0047 !important;
+  color: #ad0047 !important;
+}
+
+.button2:hover{
+
+}

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGHA</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: cursive;
+    }
+
+    header {
+        width: 100%;
+        background-color: navy;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        width: 1000px;
+        position: relative;
+        margin: auto;
+        align-items: center;
+    }
+
+    h1 {
+        color: red;
+    }
+
+
+    nav>ul {
+        display: flex;
+    }
+
+    nav>ul>li {
+        padding: 20px;
+        list-style: none;
+    }
+
+    nav>ul>li>a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        font-weight: 700;
+    }
+
+    .meghamenu {
+        position: absolute;
+        height: 500px;
+        width: 100%;
+        top: 100%;
+        left: 0px;
+        box-shadow: 0px 5px 5px 5px blue;
+        transition: 1s;
+        border-top: none;
+        visibility: hidden;
+        opacity: 0;
+        display: grid;
+        grid-template-columns: 300px 300px 300px;
+        text-align: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav>ul>li:hover .meghamenu {
+        top: 110%;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .menuitem ul li { 
+        list-style: none;
+        padding: 9px
+    }
+
+    .menuitem ul li a {
+        text-decoration: none;
+    }
+
+    .name {
+        position: absolute;
+        display: none;
+        top: 100%;
+        background-color: navy;
+
+    }
+
+    ul li ul.name li {
+        list-style: none;
+        width: 110px;
+
+
+
+
+    }
+
+    ul li ul.name li a {
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+        color: white;
+        text-align: center;
+
+
+    }
+
+    ul li ul.name li a:hover {
+        background-color: red;
+    }
+
+    ul li:hover .name {
+        display: block;
+    }  
+</style>
+
+<body>
+    <header>
+
+
+        <div class="container">
+            <div class="logo">
+                <h1>Atm<span>iya</span></h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a>
+
+                        <ul class="name">
+                            <li><a href="#">Niki</a></li>
+                            <li><a href="#">Vidhi</a></li>
+                            <li><a href="#">Niki</a></li>
+                            <li><a href="#">Vidhi</a></li>
+                            <li><a href="#">Niki</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">internship</a>
+
+                        <div class="meghamenu">
+
+                            <div class="menuitem">
+                                <ul>
+                                    <li><a href="#">atmiyaniki@gmail.com</a></li>
+                                    <li><a href="#">vidhigohil@gmail.com</a></li>
+                                    <li><a href="#">vidhiniki@gmail.com</a></li>
+                                    <li><a href="#">aneepatel@gmail.com</a></li>
+                                    <li><a href="#">darshikapatel@gmail.com</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="menuitem">
+                                <ul>
+                                    <li><a href="#">atmiyaniki@gmail.com</a></li>
+                                    <li><a href="#">vidhigohil@gmail.com</a></li>
+                                    <li><a href="#">vidhiniki@gmail.com</a></li>
+                                    <li><a href="#">aneepatel@gmail.com</a></li>
+                                    <li><a href="#">darshikapatel@gmail.com</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="menuitem">
+                                <ul>
+                                    <li><a href="#">atmiyaniki@gmail.com</a></li>
+                                    <li><a href="#">vidhigohil@gmail.com</a></li>
+                                    <li><a href="#">vidhiniki@gmail.com</a></li>
+                                    <li><a href="#">aneepatel@gmail.com</a></li>
+                                    <li><a href="#">darshikapatel@gmail.com</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="menuitem">
+                                <ul>
+                                    <li><a href="#">atmiyaniki@gmail.com</a></li>
+                                    <li><a href="#">vidhigohil@gmail.com</a></li>
+                                    <li><a href="#">vidhiniki@gmail.com</a></li>
+                                    <li><a href="#">aneepatel@gmail.com</a></li>
+                                    <li><a href="#">darshikapatel@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact</a>
+                        <ul class="name">
+                            <li><a href="#">Niki</a></li>
+                            <li><a href="#">Vidhi</a></li>
+                            <li><a href="#">Niki</a></li>
+                            <li><a href="#">Vidhi</a></li>
+                            <li><a href="#">Niki</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </nav>
+
+    </header>
+    </div>
+</body>
+
+</html>

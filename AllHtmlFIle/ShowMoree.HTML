@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .container {
+      width: 300px;
+      border: 2px solid gray;
+    }
+
+    .container p {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .expanded {
+      white-space: normal;
+      overflow: visible;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p id="read">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur,
+        placeat eligendi corrupti obcaecati, laudantium quaerat dolor fuga
+        voluptates assumenda blanditiis repellat amet consequuntur ipsum aut?
+        Velit non corporis dolor est porro id sint voluptatem quae esse amet.
+        Sit exercitationem earum omnis ex molestiae minima aliquid.
+      </p>
+
+      <button id="more" onclick="toggleRead()">READ MORE</button>
+    </div>
+
+    <script>
+      let name = false;
+
+      function toggleRead() {
+        let button = document.getElementById("more");
+        let readd = document.getElementById("read");
+
+        if (name) {
+          readd.style.whiteSpace = "nowrap";
+          readd.style.overflow = "hidden";
+          readd.style.textOverflow = "ellipsis";
+          button.innerText = "READ MORE";
+        } else {
+          readd.style.whiteSpace = "wrap";
+          readd.style.overflow = "unset";
+          readd.style.textOverflow = "visible";
+          button.innerText = "Less MORE";
+        }
+        name = !name;
+      }
+    </script>
+  </body>
+</html>

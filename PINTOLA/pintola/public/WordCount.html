@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <textarea
+      id="textInput"
+      oninput="countCharacters()"
+      rows="5"
+      cols="55"
+      maxlength="100"
+    ></textarea>
+    <p id="characterCount">0/5 characters</p>
+
+    <script>
+      function countCharacters() {
+        var text = document.getElementById("textInput").value;
+
+        var characterCount = text.length;
+
+        var maxCharacters = 5;
+
+        document.getElementById("characterCount").textContent =
+          characterCount + "/" + maxCharacters + " characters";
+
+        if (characterCount > maxCharacters) {
+          document.getElementById("textInput").value = text.slice(
+            0,
+            maxCharacters
+          );
+        }
+      }
+    </script>
+  </body>
+</html>

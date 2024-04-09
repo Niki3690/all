@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: white;
+    }
+
+    header {
+      width: 100%;
+      background-color: blue;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 1000px;
+      position: relative;
+      margin: auto;
+      align-items: center;
+    }
+
+    h1 {
+      color: white;
+    }
+
+    nav > ul {
+      display: flex;
+    }
+
+    nav > ul > li {
+      padding: 25px;
+      list-style: none;
+    }
+
+    nav > ul > li > a {
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .name {
+      position: absolute;
+      display: none;
+      top: 100%;
+      background-color: blue;
+      list-style: none;
+      text-decoration: none;
+    }
+
+    .name li a {
+      padding: 5px;
+      display: block;
+      text-decoration: none;
+    }
+
+    ul li:hover .name {
+      display: block;
+    }
+  </style>
+
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>ATMIYATA</h1>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">About</a>
+
+            <ul class="name">
+                <li><a href="#">AAAAAAAAA</a></li>
+                <li><a href="#">BBBBBBBBB</a></li>
+                <li><a href="#">CCCCCCCCC</a></li>
+                <li><a href="#">DDDDDDDDD</a></li>
+                <li><a href="#">EEEEEEEEE</a></li>
+                <li><a href="#">FFFFFFFFF</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Internship</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  </body>
+</html>

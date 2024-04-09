@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- [JavaScript this keyword] -->
+
+    <button
+      class="button"
+      onclick="this.style.background='red'"
+      style="padding: 12px"
+    >
+      Background chnage
+    </button>
+    <button
+      class="button"
+      onclick="this.style.color='red'"
+      style="padding: 12px"
+    >
+      Color chnage
+    </button>
+
+    <button
+      class="button"
+      onclick="this.style.fontSize='20px'"
+      style="padding: 12px"
+    >
+      Color chnage
+    </button>
+
+    <button
+      class="button"
+      onclick="this.style.display='none'"
+      style="padding: 12px"
+    >
+      None
+    </button>     
+  </body>
+
+  <script>
+    var person = {
+      FirstName: "Vachan",
+      SecondName: "Shah",
+      FullName: function () {
+        return this.FirstName + " " + this.SecondName;
+      },
+    };
+    document.write("<h1>" + person.FullName() + "</h1>");
+  </script>
+</html>

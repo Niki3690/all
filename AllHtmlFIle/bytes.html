@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BytesNavbar</title>
+    <style>
+      ul {
+        list-style-type: none;
+      }
+      ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+      ul li a {
+        text-decoration: none;
+        color: black;
+        position: relative;
+      }
+      ul li a::before {
+        content: "";
+        height: 0px;
+        width: 0px;
+        background: red;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        opacity: 0.2;
+        transition: all 0.5s linear;
+        position: absolute;
+      }
+      ul li a:hover::before {
+        height: 40px;
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">home</a></li>
+      <li><a href="#">about</a></li>
+      <li><a href="#">contact</a></li>
+      <li><a href="#">service</a></li>
+    </ul>
+  </body>
+</html>

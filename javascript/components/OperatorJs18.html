@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- [What is typeof  operator in JavaScipt ?] -->
+
+    <p id="out"></p>
+    <button onclick="Data()">DATE</button>
+    <button onclick="Year()">YEAR</button>
+    <button onclick="Month()">MONTH</button>
+    <button onclick="Hourse()">HOURS</button>
+    <button onclick="Minute()">MINUTE</button>
+    <button onclick="Datee()">DATE</button>
+    <button onclick="Sec()">SECOND</button>
+  </body>
+
+  <script>
+    var date = new Date();
+    function Data() {
+      document.getElementById("out").innerText = date;
+    }
+
+    function Year() {
+      document.getElementById("out").innerText = date.getFullYear();
+    }
+
+    function Month() {
+      document.getElementById("out").innerText = date.getMonth();
+    }
+
+    function Hourse() {
+      document.getElementById("out").innerText = date.getHours();
+    }
+
+    function Datee() {
+      document.getElementById("out").innerText = date.getDate();
+    }
+
+    function Sec() {
+      document.getElementById("out").innerText = date.getSeconds();
+    }
+
+    function Minute() {
+      document.getElementById("out").innerText = date.getMinutes();
+    }
+  </script>
+</html>

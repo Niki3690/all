@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- [Open and close a new window using JavaScript Window DOM] -->
+
+    <button class="button" onclick="OpenWindow()">Open-Window</button>
+    <button class="button" onclick="CloseWindow()">Close-Window</button>
+  </body>
+
+  <script>
+    var win;
+    function OpenWindow() {
+      win = window.open(
+        "https://www.youtube.com/watch?v=LPeCkxZX4qs&ab_channel=WsCubeTech"
+      );
+    }
+
+    function CloseWindow() {
+      win.close();
+    }
+  </script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pintola box</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+
+    .container img {
+        height: 260px;
+        width: 260px;
+    }
+
+    .container {
+        margin: auto auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+        width: 260px;
+        position: relative;
+        border: 1px solid #FBE0C9;
+    }
+
+    .offer {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: white;
+        padding: 4px 20px;
+    }
+
+    .container p {
+        white-space: nowrap;
+        width: 260px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: center;
+    }
+
+    del {
+        color: gray;
+        font-size: 15px;
+    }
+
+    button{
+        width: 100%;
+        background-color: #f06e27;
+        color: white;
+        padding: 5px;
+        border: none;
+        
+    }
+    select{
+        width: 100%;
+        text-align: center;
+        padding: 5px;
+        border: none;
+        background-color: #FFF5EF;
+    }
+
+    .name{
+        padding: 5px;
+    }
+</style>
+
+<body>
+    <div class="container">
+      
+        <img
+            src="https://www.pintola.in/cdn/shop/products/1_3b20f625-3738-41bf-b5c3-5f21da64aad8_600x.jpg?v=1670830242" />
+
+        <div class="offer">
+            <h6>5% off</h6>
+        </div>
+<div class="name">
+        <p>High Protein Dark Chocolate Peanut Butter</p>
+
+        <p><i><small>From</small> </i>Rs.379 <del>Rs.399</p>
+        </div>
+
+
+        <select>
+            <option>Crunchy / 510gm</option>
+            <option>Crunchy / 1kg</option>
+            <option>Creamy / 510gm</option>
+            <option>Creamya / 1kg</option>
+        </select><br>
+
+        <button>Add to cart</button>
+    </div>
+</body>
+
+</html>

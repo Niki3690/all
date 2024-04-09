@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    #demo {
+      font-weight: 600;
+      font-size: 55px;
+      text-align: center;
+      border: 5px solid black;
+      width: 545px;
+      margin-left: 345px;
+      padding: 22px;
+      background-color: lightgoldenrodyellow;
+    }
+  </style>
+  <body>
+    <p id="demo"></p>
+  </body>
+
+  <script>
+    const person = {
+      firstName: "Vachan",
+      lastName: "Shah",
+      age: 23,
+      eyeColor: "Gray",
+    };
+
+    document.getElementById("demo").innerHTML =
+      person.firstName +
+      " " +
+      person.lastName +
+      " is " +
+      person.age +
+      " years old.";
+  </script>
+</html>

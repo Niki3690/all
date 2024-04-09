@@ -1,0 +1,830 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+
+</head>
+
+
+<style>
+  body {
+    background-color: white;
+    color: black;
+  }
+
+
+  .form {
+    position: relative;
+  }
+
+  .textbox {
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    padding: 10px;
+    color: white;
+  }
+
+  .formlabel {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.4rem;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  }
+
+  .textbox:focus+.formlabel,
+  .textbox:not(:placeholder-shown)+.formlabel {
+    top: -0.3rem;
+    left: 0.5rem;
+    font-size: 15px;
+    background-color: white;
+  }
+
+  a.profile-link {
+    color: purple;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+
+
+
+
+
+  .aaa {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+
+
+  .aaa form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+  }
+
+
+  .bbbbbb {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+
+  .popup form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  body {
+    background-color: white;
+  }
+
+  .form {
+    position: relative;
+  }
+
+  .textbox {
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+    background: none;
+    padding: 10px;
+    color: white;
+  }
+
+  .formlabel {
+    position: absolute;
+    top: 1.4rem;
+    left: 1.4rem;
+    cursor: text;
+    transition: top 200ms ease-in, left 200ms ease-in, font-size 200ms ease-in;
+  }
+
+  .textbox:focus+.formlabel,
+  .textbox:not(:placeholder-shown)+.formlabel {
+    top: -0.3rem;
+    left: 0.5rem;
+    font-size: 15px;
+    background-color: white;
+  }
+
+
+  .disable-scroll {
+    overflow: hidden;
+  }
+</style>
+
+<body>
+
+  <h1 style="text-align: center;margin-top: 15px;">Editing Profile</h1>
+
+
+
+  <h1 style="padding-left: 70px;">Basic Info</h1>
+  <form>
+    <div style="display: flex;gap:320px;padding-left: 60px;">
+
+      <div>
+        <div style="border: 1px solid black;height: 150px;width: 150px;border-radius: 50%;">
+          <img id="selectedImage" src="" alt="Selected Image"
+            style="display: none; border-radius: 50%; height: 150px; width: 150px;" />
+        </div>
+      </div>
+
+
+
+
+      <div>
+        <p style="margin-top: 55px;">
+          <a class="profile-link" onclick="selectFile()" style="font-size: 20px;">Update Profile Picture</a>
+          <input type="file" id="fileInput" accept="image/*" style="display: none;"
+            onchange="handleFileSelect(event)" />
+        </p>
+      </div>
+
+
+    </div>
+    <br />
+
+    <div>
+      <div style="padding-left: 60px;">
+
+
+        <div class="form">
+          <input type="text" name="name" class="textbox" style="height: 40px; width: 95%;color: black;" />
+          <label class="formlabel">
+            Name </label><br /><br />
+        </div>
+
+
+
+        <div class="form">
+          <input type="email" name="email" class="textbox" style="height: 40px; width: 95%;color: black;" />
+          <label class="formlabel">
+            E-mail
+          </label><br /><br />
+        </div>
+
+
+
+
+        <div class="form">
+          <input type="text" name="title" class="textbox" style="height: 40px; width: 95%;color: black;" />
+          <label class="formlabel">
+            Title
+          </label><br /><br />
+        </div>
+
+
+
+        <div class="form">
+          <input type="text" name="headline" class="textbox" style="height: 40px; width: 95%;color: black;" />
+          <label class="formlabel">
+            Headline
+          </label><br /><br />
+        </div>
+
+
+        <div class="form">
+          <input type="text" name="about_you" class="textbox" style="height: 40px; width: 95%;color: black;">
+          <label class="formlabel">
+            About You
+          </label><br /><br />
+        </div>
+        <div class="select_option" style="width: 1127px;height: 40px;display: flex;gap:15px;border-radius: 5px;">
+          <select name="country" class="form-select country" style="height: 40px;width: 602px;"
+            aria-label="Default select example" onchange="loadStates()">
+            <option selected>Select Country</option>
+          </select>
+          <select name="state" class="form-select state" style="height: 40px;width: 602px;"
+            aria-label="Default select example" onchange="loadCities()">
+            <option selected>Select State</option>
+          </select>
+
+        </div><br />
+        <select name="city" class="form-select city" style="height: 40px;width: 95%;margin-bottom: 10px;"
+          aria-label="Default select example">
+          <option selected>Select City</option>
+        </select>
+
+        <form>
+          <div
+            style="border: 1px solid black; padding: 10px; width: 1105px; border: 1px solid gray;border-radius: 5px;margin-top: 7px;">
+            <label>Select Languages:</label><br /><br />
+            <input type="checkbox" id="gujarati" name="lunguages" value="Gujarati" />
+            <label for="gujarati">Gujarati</label><br />
+
+
+            <input type="button" value="Submit" onclick="displaySelection()" style="
+                background-color: blue;
+                color: white;
+                height: 35px;
+                width: 100px;
+                border: none;
+              " /><br /><br />
+
+            <input type="text" id="selectedLanguages" readonly style="height: 30px; width: 95%" /><br /><br />
+          </div>
+        </form>
+
+
+
+
+        <hr style="width: 1127px;margin-left: 0px;margin-top: 15px;" />
+
+        <h2>Links</h2>
+
+
+
+
+        <div class="form">
+          <input type="text" name="links" class="textbox" style="height: 40px; width: 95%;color: black;" />
+          <label class="formlabel">
+            Enter Linkedin link
+          </label><br /><br />
+
+
+
+          <div class="form">
+            <input type="text" name="about_you" class="textbox" style="height: 40px; width: 95%;color: black;">
+            <label class="formlabel">
+              Enter Website link
+            </label><br /><br />
+          </div>
+
+
+
+
+
+          <hr style="width: 1127px;margin-left: 0px;margin-top: 15px;" />
+
+          <h2>Experience And Education</h2>
+
+          <select style="height: 40px; width: 95%; border: 1px solid gray;">
+            <option>5 Years</option>
+            <option>5 Years</option>
+            <option>5 Years</option>
+            <option>5 Years</option>
+            <option>5 Years</option>
+          </select><br /><br />
+
+
+          <label>Add work history</label><br />
+          <button id="showPopupButton"
+            style="border: none;background-color: transparent;font-size: 35px;">+</button><br /><br />
+
+
+          <textarea cols="151" rows="4" style="border-radius: 5px;" id="workHistory"></textarea>
+
+
+          <hr style="width: 1127px;margin-left: 0px;margin-top: 15px;" />
+
+          <label>Add Education history</label><br />D3DE3DE3DEf6gtt `
+
+          <button id="showButton" style="border: none;background-color: transparent;font-size: 35px;">+</button>
+
+
+          <div id="popupForm" class="popup">
+            <span class="close" id="closeButton">&times;</span>
+
+            <form>
+              <form action="{% url 'mentee_form' %}" method="POST">
+                <h3 style="text-align: center">Enter Company Details</h3>
+                <div style="width: 300px; margin-left: auto; margin-right: auto">
+                  <div class="form">
+                    <input type="text" class="textbox" style="height: 40px; width: 95%; color: black" />
+                    <label class="formlabel"> Company name </label><br />
+                  </div><br />
+
+                  <div class="form">
+                    <input type="text" class="textbox" style="height: 40px; width: 95%; color: black" />
+                    <label class="formlabel"> Title </label><br />
+                  </div><br>
+
+                  <div class="form">
+                    <input type="text" class="textbox" style="height: 40px; width: 95%; color: black" />
+                    <label class="formlabel"> Current Role </label><br />
+                  </div><br>
+
+                  <div style="display: flex; gap: 19px">
+                    <div>
+                      <select style="
+                        height: 60px;
+                        border-radius: 4px;
+                        padding: 0px 55px 0px 55pxpx;
+                        border: 1px solid gray;
+                        width: 132px;
+                        padding-left: 9px;
+                      ">
+                        <option>Start Month</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                    </div>
+                    <div>
+                      <div>
+                        <select style="
+                          height: 60px;
+                          border-radius: 4px;
+                          padding: 0px 55px 0px 55pxpx;
+                          border: 1px solid gray;
+                          width: 132px;
+                          padding-left: 9px;
+                        ">
+                         <option>Start Year</option>
+                         <option>2010</option>
+                         <option>2011</option>
+                         <option>2012</option>
+                         <option>2013</option>
+                         <option>2014</option>
+                         <option>2015</option>
+                         <option>2016</option>
+                         <option>2017</option>
+                         <option>2018</option>
+                         <option>2019</option>
+                         <option>2020</option>
+                         <option>2021</option>
+                         <option>2022</option>
+                         <option>2023</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="display: flex; gap: 19px; margin-top: 20px">
+                    <div>
+                      <select style="
+                        height: 60px;
+                        border-radius: 4px;
+                        padding: 0px 55px 0px 55pxpx;
+                        border: 1px solid gray;
+                        width: 132px;
+                        padding-left: 9px;
+                      ">
+                       <option>End Month</option>
+                       <option>01</option>
+                       <option>02</option>
+                       <option>03</option>
+                       <option>04</option>
+                       <option>05</option>
+                       <option>06</option>
+                       <option>07</option>
+                       <option>08</option>
+                       <option>09</option>
+                       <option>10</option>
+                       <option>11</option>
+                       <option>12</option>
+                      </select>
+                    </div>
+                    <div>
+                      <div>
+                        <select style="
+                          height: 60px;
+                          border-radius: 4px;
+                          padding: 0px 55px 0px 55pxpx;
+                          border: 1px solid gray;
+                          width: 132px;
+                          padding-left: 9px;
+                        ">
+                        <option>End Year</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                        <option>2023</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <input type="checkbox" id="check1" name="check1" style="margin-top: 20px; margin-left: 15px" /><label
+                    for="check1" style="margin-left: 15px; font-weight: 600; cursor: pointer">Present</label>
+
+                  <div style="display: flex; margin-left: 179px; gap: 25px">
+                    <div>
+                      <button type="button" style="
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        color: green;
+                        font-weight: 700;
+                        cursor: pointer;
+                      ">
+                        Cancel
+                      </button>
+                    </div>
+
+                    <div>
+                      <button id="saveButton" type="button" style="
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        color: green;
+                        font-weight: 700;
+                        cursor: pointer;
+                      ">
+                        Save
+                      </button>
+                    </div>
+
+
+                  </div>
+                </div>
+              </form>
+            </form>
+          </div>
+
+
+
+
+          <div id="AAA" class="aaa">
+            <span class="bbbbbb" id="BBB">&times;</span>
+
+            <form>
+              <form action="{% url 'mentee_form' %}" method="POST">
+                <h3 style="text-align: center">Enter Education Details</h3>
+                <div style="width: 300px; margin-left: auto; margin-right: auto">
+                  <div class="form">
+                    <input type="text" class="textbox" style="height: 40px; width: 95%; color: black" />
+                    <label class="formlabel"> Institute name </label><br />
+                  </div><br />
+
+                  <div class="form">
+                    <input type="text" class="textbox" style="height: 40px; width: 95%; color: black" />
+                    <label class="formlabel"> Degree </label><br />
+                  </div><br>
+
+                  <div class="form">
+                    <input type="text" class="textbox" style="height: 40px; width: 95%; color: black" />
+                    <label class="formlabel">Field Of Study </label><br />
+                  </div><br>
+
+                  <div style="display: flex; gap: 19px">
+                    <div>
+                      <select style="
+                        height: 60px;
+                        border-radius: 4px;
+                        padding: 0px 55px 0px 55pxpx;
+                        border: 1px solid gray;
+                        width: 132px;
+                        padding-left: 9px;
+                      ">
+                        <option>Start Month</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                       
+                      </select>
+                    </div>
+                    <div>
+                      <div>
+                        <select style="
+                          height: 60px;
+                          border-radius: 4px;
+                          padding: 0px 55px 0px 55pxpx;
+                          border: 1px solid gray;
+                          width: 132px;
+                          padding-left: 9px;
+                        ">
+                          <option>Start Year</option>
+                          <option>2010</option>
+                          <option>2011</option>
+                          <option>2012</option>
+                          <option>2013</option>
+                          <option>2014</option>
+                          <option>2015</option>
+                          <option>2016</option>
+                          <option>2017</option>
+                          <option>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div style="display: flex; gap: 19px; margin-top: 20px">
+                    <div>
+                      <select style="
+                        height: 60px;
+                        border-radius: 4px;
+                        padding: 0px 55px 0px 55pxpx;
+                        border: 1px solid gray;
+                        width: 132px;
+                        padding-left: 9px;
+                      ">
+                        <option>End Month</option>
+                        <option>01</option>
+                        <option>02</option>
+                        <option>03</option>
+                        <option>04</option>
+                        <option>05</option>
+                        <option>06</option>
+                        <option>07</option>
+                        <option>08</option>
+                        <option>09</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                      </select>
+                    </div>
+                    <div>
+                      <div>
+                        <select style="
+                          height: 60px;
+                          border-radius: 4px;
+                          padding: 0px 55px 0px 55pxpx;
+                          border: 1px solid gray;
+                          width: 132px;
+                          padding-left: 9px;
+                        ">
+                          <option>End Year</option>
+                          <option>2010</option>
+                          <option>2011</option>
+                          <option>2012</option>
+                          <option>2013</option>
+                          <option>2014</option>
+                          <option>2015</option>
+                          <option>2016</option>
+                          <option>2017</option>
+                          <option>2018</option>
+                          <option>2019</option>
+                          <option>2020</option>
+                          <option>2021</option>
+                          <option>2022</option>
+                          <option>2023</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <input type="checkbox" id="check1" name="check1" style="margin-top: 20px; margin-left: 15px" /><label
+                    for="check1" style="margin-left: 15px; font-weight: 600; cursor: pointer">Present</label>
+
+                  <div style="display: flex; margin-left: 179px; gap: 25px">
+                    <div>
+                      <button style="
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        color: green;
+                        font-weight: 700;
+                        cursor: pointer;
+                      ">
+                        Cancel
+                      </button>
+
+
+                    </div>
+                    <div>
+                      <button style="
+                  border: none;
+                  outline: none;
+                  background-color: transparent;
+                  color: green;
+                  font-weight: 700;
+                  cursor: pointer;
+                " id="saveButton">
+                        Save
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </form>
+          </div>
+          <br /><br />
+
+          <textarea cols="151" rows="4" style="border-radius: 5px;"></textarea>
+
+          <hr style="margin-left: -68px;width: 1261px;margin-top: 15px;">
+        </div>
+
+        <h2>Resume</h2>
+        <p>be sure to upload your resume </p>
+
+        <input type="file" name="resume" style="margin-top: 5px;" class="nn"><br /><br /><br />
+
+      </div>
+
+      <center><input type="submit" value="Submit" style="height: 35px;
+    width: 100px;
+    border: none;
+    background-color: orange;
+    font-weight: 700;
+   ;">
+      </center>
+
+
+  </form>
+
+</body>
+
+
+
+<script>
+  function displaySelection() {
+    const selectedCheckboxes = document.getElementsByName("languages");
+    const selectedLanguagesInput =
+      document.getElementById("selectedLanguages");
+
+    const selectedOptions = [];
+
+    for (let i = 0; i < selectedCheckboxes.length; i++) {
+      if (selectedCheckboxes[i].checked) {
+        selectedOptions.push(selectedCheckboxes[i].value);
+      }
+    }
+
+    selectedLanguagesInput.value = selectedOptions.join(", ");
+  }
+
+
+
+
+
+  function selectFile() {
+    const fileInput = document.getElementById("fileInput");
+    fileInput.click();
+  }
+
+  function handleFileSelect(event) {
+    const selectedFile = event.target.files[0];
+    if (selectedFile) {
+      const selectedImageElement = document.getElementById("selectedImage");
+      selectedImageElement.src = URL.createObjectURL(selectedFile);
+      selectedImageElement.style.display = "block";
+
+      
+      selectedImageElement.style.borderColor = "green";
+    }
+  }
+  const showPopupButton = document.getElementById("showPopupButton");
+  const popupForm = document.getElementById("popupForm");
+  const closeButton = document.getElementById("closeButton");
+
+  showPopupButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    popupForm.style.display = "block";
+    document.body.classList.add("disable-scroll");
+  });
+
+  closeButton.addEventListener("click", function () {
+    popupForm.style.display = "none";
+    document.body.classList.remove("disable-scroll");
+  });
+
+  document
+    .getElementById("saveButton")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+
+      const companyName = document.getElementById("companyName").value;
+      const title = document.getElementById("title").value;
+      const currentRole = document.getElementById("currentRole").value;
+      const startMonth = document.getElementById("startMonth").value;
+      const startYear = document.getElementById("startYear").value;
+      const endMonth = document.getElementById("endMonth").value;
+      const endYear = document.getElementById("endYear").value;
+      const isPresent = document.getElementById("check1").checked;
+
+
+      if (
+        !companyName ||
+        !title ||
+        !currentRole ||
+        !startMonth ||
+        !startYear ||
+        (!isPresent && (!endMonth || !endYear))
+      ) {
+    
+        return;
+      }
+      const workHistoryTextarea = document.getElementById("workHistory");
+
+      let companyDetails = `${companyName} - ${title}, ${currentRole}, ${startMonth} ${startYear}`;
+      if (!isPresent) {
+        companyDetails += ` - ${endMonth} ${endYear}`;
+      }
+
+      if (workHistoryTextarea.value) {
+        workHistoryTextarea.value += "\n" + companyDetails;
+      } else {
+        workHistoryTextarea.value = companyDetails;
+      }
+
+      document.getElementById("companyDetailsForm").reset();
+   
+    });
+
+
+  const showButton = document.getElementById("showButton");
+  const AAA = document.getElementById("AAA");
+  const BBB = document.getElementById("BBB");
+
+  showButton.addEventListener("click", function (event) {
+    event.preventDefault();
+    AAA.style.display = "block";
+    document.body.classList.add("disable-scroll");
+  });
+
+  BBB.addEventListener("click", function () {
+    AAA.style.display = "none";
+    document.body.classList.remove("disable-scroll");
+  });
+
+
+</script>
+
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onchnage</title>
+  </head>
+  <body>
+    <div class="container">
+      <select id="selected" onchange="Fun()">
+        <option value="car">Car</option>
+        <option value="Bike">Bike</option>
+        <option value="Activa">Activa</option>
+        <option value="Jupiter">Jupiter</option>
+        <option value="Truck">Truck</option>
+      </select>
+      <h1 id="result"></h1>
+    </div>
+
+    <script>
+      function Fun() {
+        var x = document.getElementById("selected").value;
+        document.getElementById("result").innerHTML = "You selected: " + x;
+      }
+    </script>
+  </body>
+</html>

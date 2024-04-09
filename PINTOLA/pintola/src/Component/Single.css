@@ -1,0 +1,173 @@
+.single {
+  display: flex;
+  gap: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 60px;
+}
+
+.iiimmg {
+  height: 600px;
+}
+
+.diss {
+  font-size: 45px;
+}
+
+.namee {
+  font-size: 30px;
+  margin-top: 15px;
+  font-weight: 700;
+}
+
+i {
+  color: #f16e28;
+  margin-top: 25px;
+}
+
+.nn {
+  font-size: 20px;
+}
+
+.var {
+  margin-top: 1px;
+}
+
+.cru {
+  background-color: #ffe9c9;
+  color: black;
+  padding: 8px 9px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-right: 7px;
+}
+
+.cre {
+  background-color: #f16e28;
+  color: white;
+  padding: 8px 9px;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.gm {
+  background-color: #f16e28;
+  color: white;
+  padding: 8px 9px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-right: 7px;
+}
+
+.kg {
+  background-color: #ffe9c9;
+  color: black;
+  padding: 8px 9px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-right: 7px;
+}
+
+.kgg {
+  background-color: #ffe9c9;
+  color: black;
+  padding: 8px 9px;
+  font-size: 12px;
+  margin-top: 10px;
+  margin-right: 7px;
+}
+
+.minus {
+  background-color: #d2d2d2;
+  padding: 0px 14px;
+  margin-top: 45px;
+  font-size: 30px;
+  font-weight: 800;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-left: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  height: 46px;
+}
+
+.plus {
+  background-color: #000000;
+  padding: 0px 14px;
+  margin-top: 45px;
+  font-size: 30px;
+  font-weight: 800;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-left: #000000;
+  border-right: 1px solid #000000;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  margin-left: -12px;
+  height: 46px;
+}
+
+.inputt {
+  /* border: 2px solid black; */
+  background-color: white;
+  height: 46px;
+  width: 195px;
+  margin-top: -25px;
+  color: gray;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+  border-left: transparent;
+  border-right: transparent;
+  text-align: center;
+  outline: none;
+  margin-left: -12px;
+}
+
+.inputt:hover {
+  background-color: white;
+}
+
+.ntb {
+  display: flex;
+  margin-top: 40px;
+  gap: 15px;
+}
+
+.vv {
+  padding: 9px 85px;
+  border-radius: 5px;
+  border: 1px solid black;
+  font-weight: 600;
+}
+
+.vv:hover {
+  background-color: #f16e28;
+  color: white;
+  border: none;
+}
+
+.vvv {
+  background-color: #f16e28;
+  padding: 10px 85px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+}
+
+.vvv:hover {
+  background-color: #058366;
+  color: white;
+  border: none;
+}
+
+.mmm {
+  margin-left: 48px;
+  margin-top: -35px;
+}
+
+.mm {
+  margin-left: 240px;
+  margin-top: -91px;
+}

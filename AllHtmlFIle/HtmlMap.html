@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image map</title>
+  </head>
+
+  <style></style>
+  <body>
+    <img
+      src="https://www.w3schools.com/html/workplace.jpg"
+      alt="Workplace"
+      usemap="#workmap"
+      width="400"
+      height="379"
+    />
+    <map name="workmap">
+      <area
+        shape="rect"
+        coords="35,44,270,342"
+        alt="Computer"
+        href="https://www.w3schools.com/w3images/mac.jpg"
+      />
+      <area
+        shape="rect"
+        coords="292,176,332,246"
+        alt="Phone"
+        href="https://www.w3schools.com/w3images/cellphone.jpg"
+      />
+      <area
+        shape="circle"
+        coords="334,301,338,293"
+        alt="Coffee"
+        href="https://www.w3schools.com/w3images/coffeehouse2.jpg"
+      />
+    </map>
+  </body>
+</html>

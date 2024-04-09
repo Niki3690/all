@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visibility</title>
+  </head>
+  <body>
+    <p id="demo1">This is some text.</p>
+    <p id="demo2">This is some text.</p>
+    <div class="container">
+      <button onclick="Visibility()">Visibility</button>
+      <button onclick="Display()">display</button>
+    </div>
+    <script>
+      function Visibility() {
+        document.getElementById("demo2").style.visibility = "hidden";
+      }
+
+      function Display() {
+        document.getElementById("demo1").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

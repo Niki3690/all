@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="container">
+        <!-- chnage color -->
+        <hr>
+  <p>
+        <h1 class="text-red-900">This is blue</h1>
+        <hr>
+        <!-- font-size -->
+        <h1 class="text-4xl">This is blue</h1>
+        <hr>
+        <!-- font-weight -->
+        <h1 class="font-bold">This is blue</h1>
+        <hr>
+
+        <!-- background color? -->
+        <h1 class="bg-red-300">This is blue</h1>
+           <br>
+        <hr>
+
+        <!-- mx-margin x side leftside-->
+        <!-- my-margin y side upside -->
+        <!-- py-margin y side padding upside -->
+        <!-- px-margin x side padding left -->
+        <br>
+<hr>
+
+<!-- bgcolor text color  hover -->
+        <nav
+            class="mx-14 my-8 bg-purple-900 py-7 px-72 text-white text-2xl font-semibold cursor-pointer hover:bg-slate-500 hover:text-black hover:border-4 border-black">
+            <!-- flex side -->
+            <ul class="flex">
+                <li class="mx-5">Home</li>
+                <li class="mx-5">About</li>
+                <li class="mx-5">Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <hr>
+
+    <!-- bgcolor button hover -->
+    <div class="bg-green-500">
+        <input type="text" name="" id="" class="border-2 px-3 py-3 rounded-2xl shadow-md shadow-red-900" />
+        <button
+            class="bg-orange-400 py-4 px-4 mx-12 my-12 shadow-md shadow-red-900 font-bold text-xl hover:bg-orange-500 hover:text-yellow-100 hover:font-bold">
+            Click Me
+        </button>
+    </div>
+    <br>
+    <hr>
+<!-- box in image and text -->
+    <p class="text-center text-4xl font-semibold font-serif my-10 mb-3">
+        My Images
+    </p>
+    <hr class="w-1/5 mx-auto border-5 border-blue-600 justify-items-center" />
+
+    <!-- cards -->
+    <div class="grid grid-cols-3 gap-5 my-10 mx-5">
+        <div class="rounded overflow-hidden shadow-lg max-w-sm">
+            <img
+                src="https://images.unsplash.com/photo-1585409677983-0f6c41ca9c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" />
+            <div class="px-6 py-4">
+                <div class="font-bold mb-2">Mountain</div>
+                <p class="text-gray-500 text-md">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                    blanditiis laboriosam fugit.Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Enim blanditiis laboriosam fugit.
+                </p>
+            </div>
+
+            <div class="grid grid-flow-col gap-3 pb-3 px-6">
+                <span class="bg-gray-300 rounded-full px-2 text-sm font-base text-center">#Photography</span>
+                <span class="bg-gray-300 rounded-full px-2 text-sm text-center">#Travel</span>
+                <span class="bg-gray-300 rounded-full px-2 text-sm text-center">#forest</span>
+            </div>
+        </div>
+
+        <div class="rounded overflow-hidden shadow-lg max-w-sm">
+            <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                class="h-[260px]" />
+            <div class="px-6 py-4">
+                <div class="font-bold mb-2">Nature</div>
+                <p class="text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                    blanditiis laboriosam fugit.Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Enim blanditiis laboriosam fugit.
+                </p>
+            </div>
+            <div class="grid grid-flow-col gap-3 pb-3 px-6">
+                <span class="bg-gray-300 rounded-full px-2 text-sm font-base text-center">#Photography</span>
+                <span class="bg-gray-300 rounded-full px-2 text-sm text-center">#Travel</span>
+                <span class="bg-gray-300 rounded-full px-2 text-sm text-center">#forest</span>
+            </div>
+        </div>
+
+        
+
+        <div class="rounded overflow-hidden shadow-lg max-w-sm">
+            <img src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819_640.jpg" />
+            <div class="px-6 py-4">
+                <div class="font-bold mb-2">Flower</div>
+                <p class="text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+                    blanditiis laboriosam fugit.Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Enim blanditiis laboriosam fugit.
+                </p>
+            </div>
+            <div class="grid grid-flow-col gap-3 pb-3 px-6">
+                <span class="bg-gray-300 rounded-full px-2 text-sm font-base text-center">#Photography</span>
+                <span class="bg-gray-300 rounded-full px-2 text-sm text-center">#Travel</span>
+                <span class="bg-gray-300 rounded-full px-2 text-sm text-center">#forest</span>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- bgcolor  hover in box -->
+
+    <div class="grid place items-center h-screen w-96 text-center justify-end mx-80">
+        <p
+            class="bg-blue-200 pl-12 pr-12 pt-12 pb-12 border-4 border-blue-600 hover:bg-blue-400 hover:border-blue-900 text-xl rounded-xl font-mono">
+            Lorem ipsum dolor.
+        </p>
+    </div>
+    <hr>
+
+        <!-- image height width rounded -->
+
+    <div class="w-full bg-no-repeat bg-fixed bg-cover">
+        <img src="https://img.freepik.com/free-vector/gradient-abstract-mountain-background-design_23-2149178797.jpg"
+            class="bg-cover w-[100%] h-96 bg-fixed rounded-3xl" />
+    </div>
+    <br>
+    <hr> 
+
+    <!-- 
+    <div class="h-screen bg-blue-200"> -->
+
+    <div class="grid place-items-center h-screen">
+        <h1 class="text-black-900 h-40 bg-gray-400 text-4xl italic font-black w-full text-center px-5 text-opacity-25">
+            Hello India
+        </h1>
+    </div>
+    <hr>
+    <br>
+
+        <!-- text underline -->
+    <div>
+        <div class="text-center font-black underline">
+            <a href="#">HELLLLLO!</a>
+        </div>
+        <hr>
+         <!-- text upperline -->
+
+        <div class="text-center font-black line-through">
+            <a href="#">HELLLLLO!</a>
+        </div>
+        <hr>
+    </div>
+
+     <!-- text uppercase -->
+    <div>
+        <div class="text-center mt-8 font-bold text-2xl uppercase">
+            Heyy Ahmedabad
+        </div>
+
+      <!-- text lowercase -->
+    
+        <hr>
+        <div class="text-center mt-8 font-bold text-2xl lowercase">
+            Heyy Ahmedabad
+        </div>
+        <hr>
+
+         <!-- text capitalize -->
+        <div class="text-center mt-8 font-bold text-2xl capitalize">
+            Heyy Ahmedabad
+        </div>
+        <hr>
+    </div>
+
+
+     <!-- text bhega bhega -->
+    <div>
+        <div class="mt-6 tracking-tighter">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga iusto
+            maxime voluptatibus officiis facilis? Ea quia sit aliquam officia iure,
+            molestiae, corrupti non amet in aut neque tenetur quidem dolorum
+            voluptates? Fugit voluptas ea ad. Consequuntur recusandae nulla dolorem
+            quis asperiores esse, voluptate dolores nisi!
+        </div>
+        <hr>
+
+           <!-- text thodak cuhtta -->
+
+        <div class="mt-6 tracking-wide">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga iusto
+            maxime voluptatibus officiis facilis? Ea quia sit aliquam officia iure,
+            molestiae, corrupti non amet in aut neque tenetur quidem dolorum
+            voluptates? Fugit voluptas ea ad. Consequuntur recusandae nulla dolorem
+            quis asperiores esse, voluptate dolores nisi!
+        </div>
+        <hr>
+
+           <!-- text chutta -->
+
+        <div class="mt-6 tracking-widest">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga iusto
+            maxime voluptatibus officiis facilis? Ea quia sit aliquam officia iure,
+            molestiae, corrupti non amet in aut neque tenetur quidem dolorum
+            voluptates? Fugit voluptas ea ad. Consequuntur recusandae nulla dolorem
+            quis asperiores esse, voluptate dolores nisi!
+        </div>
+        <hr>
+    </div>
+
+
+       <!-- text more space -->
+    <div>
+        <div class="leading-10 mt-7">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed
+            quia quos nostrum aut debitis quod earum dolore laudantium distinctio
+            officia fuga consequuntur totam, asperiores laborum, odit nemo ipsa
+            consequatur eveniet repudiandae perferendis cupiditate. Adipisci sequi
+            asperiores illo cum laudantium? Neque voluptatem dolores perspiciatis
+            praesentium!
+        </div>
+        <hr>
+        <br /><br />
+
+        
+       <!-- text less space -->
+        <div class="leading-2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sed
+            quia quos nostrum aut debitis quod earum dolore laudantium distinctio
+            officia fuga consequuntur totam, asperiores laborum, odit nemo ipsa
+            consequatur eveniet repudiandae perferendis cupiditate. Adipisci sequi
+            asperiores illo cum laudantium? Neque voluptatem dolores perspiciatis
+            praesentium!
+        </div>
+        <hr>
+    </div>
+    <br /><br /><br />
+
+    <div>
+        
+       <!-- font family-->
+        <div class="font-sans">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+            ullam natus ab. Unde maiores veniam saepe delectus aperiam
+            exercitationem cum, natus sit excepturi maxime!
+        </div>
+        <hr>
+
+          <!-- font family-->
+        <div class="font-serif">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+            ullam natus ab. Unde maiores veniam saepe delectus aperiam
+            exercitationem cum, natus sit excepturi maxime!
+        </div>
+        <hr>
+
+          <!-- font family-->
+        <div class="font-mono">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore quo
+            ullam natus ab. Unde maiores veniam saepe delectus aperiam
+            exercitationem cum, natus sit excepturi maxime!
+        </div>
+        <hr>
+    </div>
+    <br><br>
+
+
+  <!-- font size-->
+    <div>
+        <div class="text-xs">
+            Hey i m here
+        </div>
+        <div class="text-sm">
+            Hey i m here
+        </div>
+        <div class="text-base">
+            Hey i m here
+        </div>
+        <div class="text-lg">
+            Hey i m here
+        </div>
+        <div class="text-xl">
+            Hey i m here
+        </div>
+        <div class="text-2xl">
+            Hey i m here
+        </div>
+        <div class="text-4xl">
+            Hey i m here
+        </div>
+        <div class="text-5xl">
+            Hey i m here
+        </div>
+    </div>
+    <div class="text-6xl">
+        Hey i m here
+    </div>
+    </div>
+    <div class="text-7xl">
+        Hey i m here
+    </div>
+    </div>
+    <div class="text-8xl">
+        Hey i m here
+    </div>
+    </div>
+    <div class="text-9xl">
+        Hey i m here
+    </div>
+    <hr>
+    </div>
+
+    <br><br><br>
+
+      <!-- font Italic-->
+    <div>
+        <p class="italic">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, eveniet. Dignissimos ea
+            neque, debitis iure ut consectetur fugiat provident! Quaerat numquam at ipsam! Ratione, reiciendis?</p>
+    </div>
+    <hr>
+
+
+    <br><br>
+  <!-- font weight-->
+    <div>
+        <p class="font-thin">Lorem ipsum dolor sit amet.</p>
+        <p class="font-extralight">Lorem ipsum dolor sit amet.</p>
+        <p class="font-light">Lorem ipsum dolor sit amet.</p>
+        <p class="font-normal">Lorem ipsum dolor sit amet.</p>
+        <p class="font-medium">Lorem ipsum dolor sit amet.</p>
+        <p class="font-semibold">Lorem ipsum dolor sit amet.</p>
+        <p class="font-bold">Lorem ipsum dolor sit amet.</p>
+        <p class="font-extrabold">Lorem ipsum dolor sit amet.</p>
+        <p class="font-black">Lorem ipsum dolor sit amet.</p>
+    </div>
+    <br><br><hr>
+
+
+<hr>
+    <div>
+        <p class="text-black-900 h-12 bg-neutral-400 text-center justify-center pt-6 pb-11 w-full ">I am Engineer</p>
+    </div>
+    <hr>
+
+    <br><br><br>
+
+
+    <div class="grid place-content-center text-center">
+
+        <div class="h-32 w-40 bg-slate-400 text-white text-center justify-center items-center border-8 border-purple-950 rounded-lg">Hellooo India</div>
+    </div>
+</body>
+
+</html>

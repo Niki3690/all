@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- [JavaScript Screen Object  and its properties] -->
+    <button class="button" onclick="AvlHeight()">Avl Height</button>
+    <button class="button" onclick="AvlWidth()">Avl Width</button>
+    <button class="button" onclick="ColorDepth()">ColorDepth</button>
+    <button class="button" onclick="PixelDepth()">PixelDepth</button>
+    <button class="button" onclick="Height()">Height</button>
+    <button class="button" onclick="Width()">Width</button>
+  </body>
+
+  <script>
+    function AvlHeight() {
+      var height = screen.availHeight + "px";
+      alert(height);
+    }
+
+    function AvlWidth() {
+      var width = screen.availWidth + "px";
+      alert(width);
+    }
+
+    function ColorDepth() {
+      var Color = screen.colorDepth + "px";
+      alert(Color);
+    }
+
+    function PixelDepth() {
+      var Pixel = screen.pixelDepth + "px";
+      alert(Pixel);
+    }
+
+    function Height() {
+      var He = screen.height + "px";
+      alert(He);
+    }
+
+    function Width() {
+      var We = screen.width + "px";
+      alert(We);
+    }
+  </script>
+</html>

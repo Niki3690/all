@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DDEMo</title>
+
+  <script src="DDDemo0.js"></script>
+  <h1 id="demo1"></h1>
+  <h1 id="demo2"></h1>
+  <h1 id="demo">goooood morning</h1>
+  <!-- <h1 id="demo1">Good morning</h1> -->
+</head>
+<input type="text" value="18" id="ages" />
+<button onclick="FUN()">Click</button>
+
+
+<!-- void -->
+
+<a href="javascript:void(0)">click me</a>
+<p>
+<a href="javascript:void(document.body.style.backgroundColor='#1C5E7D';document.body.style.color='white')">click me<a>
+<body>
+  <script>
+
+    // let numbers = [52, 41, 6, 3, 22, 55, 14];
+
+    // let txt = "";
+    // numbers.forEach(FUN);
+    // document.getElementById("demo").innerHTML = txt;
+
+    // function FUN(value) {
+    //     txt += value+ "<br>";
+    // }
+
+    // Map
+
+
+    // let num1=[41,85,7,4,85,8,5]
+    // let num2=num1.map(FUN);
+
+    // document.getElementById("demo").innerHTML=num2;
+
+
+    // function FUN(value){
+    //   return value +3
+    // }
+
+    // flatmap
+
+    // let num1=[41,85,7,4,85,8,5]
+    // let num2=num1.flatMap((n)=>n +1)
+
+    // document.getElementById("demo").innerHTML=num2;
+
+    // fliter
+
+    // let num1=[45,5,10,17,25]
+    //  let num2=num1.filter(Fun);
+    //  document.getElementById("demo").innerHTML=num2;
+
+    //  function Fun(value){
+    //  return value <18
+    //  }
+
+
+    // reducer
+
+    // let num1=[45,5,10,17,25]
+    //  let num2=num1.reduce(Fun,3);
+    //  document.getElementById("demo").innerHTML=num2;
+
+    //  function Fun(value,total){
+    //  return total + value
+    //  }
+
+
+    // every
+
+    // let num1=[45,5,10,17,25]
+    //  let num2=num1.every(Fun);
+    //  document.getElementById("demo").innerHTML=num2;
+
+    //  function Fun(value){
+    //  return  value > 4
+    //  }
+
+
+    // some
+
+    // let num1=[45,5,10,17,25]
+    //  let num2=num1.some(Fun);
+    //  document.getElementById("demo").innerHTML=num2;
+
+    //  function Fun(value){
+    //  return  value > 46
+    //  }
+
+
+    // key
+
+    // let name=["banana","oranges","apple","mango"]
+    // let keys=name.keys()
+
+
+
+    // let demo=""
+    // for(let x of keys){
+    //   demo += x + "<br>"
+    // }
+    // document.getElementById("demo").innerHTML=demo;
+
+    // Entries
+
+
+    // let name=["banana","oranges","apple","mango"]
+    // let dd=name.entries()
+
+    // for(let x of dd){
+
+    //   document.getElementById("demo").innerHTML += x + "<br>";
+    // }
+
+
+
+    // Dates
+    // let dd= Date();
+    // // document.getElementById("demo").innerHTML=dd
+    // document.getElementById("demo").innerHTML=typeof dd
+
+
+
+    // let w=new Date("2022-04-26");
+    // document.getElementById("demo").innerHTML=w
+
+
+
+    // let w=new Date("october 14,2014 11:12:11");
+    // document.getElementById("demo").innerHTML=w
+
+    // jan-0
+    // dec-11
+
+    // let dd=new Date(2018,15,24,10,33,30)
+    // document.getElementById("demo").innerHTML=dd
+
+
+    // let dd=new Date(2018,15,24,10,33)
+    // document.getElementById("demo").innerHTML=dd
+
+
+    // let dd=new Date(2018,15,24,10)
+    // document.getElementById("demo").innerHTML=dd
+
+
+    // let dd=new Date(2018,15,24)
+    // document.getElementById("demo").innerHTML=dd
+
+
+    // let dd=new Date(2018,15)
+    // document.getElementById("demo").innerHTML=dd
+
+
+    // let dd=new Date(2018)
+    // document.getElementById("demo").innerHTML=dd
+
+
+    // let num=new Date();
+    // document.getElementById("demo").innerHTML=num.toString()
+
+
+    // let num=new Date();
+    // document.getElementById("demo").innerHTML=num.toDateString()
+
+
+    // GET DATE
+
+    // let num=new Date("2021-03-25");
+    // document.getElementById("demo").innerHTML=num.getDay();
+
+    // SET DATE
+
+    // let dd=new Date()
+    // dd.setMinutes(22);
+    // document.getElementById("demo").innerHTML=dd
+
+
+
+    // MATH
+
+    //Round
+    // document.getElementById("demo").innerHTML=Math.round(3.9)
+
+    // ceil
+    // document.getElementById("demo").innerHTML=Math.ceil(3.1)
+
+    // floor
+    // document.getElementById("demo").innerHTML=Math.floor(312.941525)
+
+    // trunc
+    // document.getElementById("demo").innerHTML=Math.trunc(312.941525)
+
+    // sign
+    // document.getElementById("demo").innerHTML=Math.sign()
+
+    // pow
+    // document.getElementById("demo").innerHTML=Math.pow(5,2)
+
+    // sqrt
+    // document.getElementById("demo").innerHTML=Math.sqrt(64)
+
+
+    // abs
+    // document.getElementById("demo").innerHTML=Math.abs(-4.9)
+
+
+
+    // min
+    // document.getElementById("demo").innerHTML=Math.min(0,150,30,20,-8,15,-250,450)
+
+
+    // max
+    // document.getElementById("demo").innerHTML=Math.max(0,150,30,20,-8,15,-250,450)
+
+
+    // random
+    // document.getElementById("demo").innerHTML=Math.random()
+
+
+    //  document.getElementById("demo").innerHTML=Math.floor(Math.random()*10)+2
+
+
+
+    // BOOlean
+
+    // yes/no
+    // true/false
+    // on/off
+
+    // document.getElementById("demo").innerHTML=Boolean(10<9)
+
+
+
+    // let x=-1;
+    // document.getElementById("demo").innerHTML=Boolean(x)
+
+
+    // let x=" ";
+    // document.getElementById("demo").innerHTML=Boolean(x)
+
+    // let x;
+    // document.getElementById("demo").innerHTML=Boolean(x)
+
+    // let x=null;
+    // document.getElementById("demo").innerHTML=Boolean(x)
+
+
+    // let x=true;
+    // document.getElementById("demo").innerHTML=Boolean(x)
+
+    // let x=15/"good";
+    // document.getElementById("demo").innerHTML=Boolean(x)
+
+    // let x=false;
+    // let y=new Boolean(false)
+    // document.getElementById("demo").innerHTML=typeof x + "<br>" + typeof y
+
+    // let x=false;
+    // let y=new Boolean(false)
+    // document.getElementById("demo").innerHTML=(x==y);
+
+
+    // let x=false;
+    // let y=new Boolean(false)
+    // document.getElementById("demo").innerHTML=(x===y);
+
+
+    // let x=new Boolean(false)
+    // let y=new Boolean(false)
+    // document.getElementById("demo").innerHTML=(x===y);
+
+
+
+    // conditional opartor
+
+
+    // ternary oparator
+
+
+    // function FUN(){
+    //   let ageee=document.getElementById("ages").value;
+    //   let name=(ageee < 18) ? "var che" : "api sko cho";
+
+
+    //   document.getElementById("demo").innerHTML=name
+
+    // }
+
+
+
+    // function FUN(){
+    //   let vote;
+    //   let ages=Number(document.getElementById("ages").value);
+
+    // if(isNaN(ages)){
+    //   vote="plz enter valid number"
+    // }else{
+    //   vote=(ages < 18) ? " VAR CHE " : " API SKO CHO"
+    // }
+    // document.getElementById("demo").innerHTML=vote
+    // }
+
+
+// nullish operator
+
+// let name="patel";
+// let name1="niki";
+// let name2=name1?? name
+
+// document.getElementById("demo").innerHTML=name2
+
+
+
+// chaining operator
+
+// let color={colors:"black",name:'kinju',years:1999}
+
+// let num=color ?. years;
+// document.getElementById("demo").innerHTML=num
+
+
+// loops
+// if loop
+
+
+// if(new Date().getHours() < 11){
+//   document.getElementById("demo1").innerHTML="good evening"
+// }
+
+
+// if...else
+
+// let hour=new Date().getHours();
+// let vote;
+
+
+// if(hour <14){
+//   vote="good afternoon"
+// }else{
+//   vote="good day"
+// }
+// document.getElementById("demo1").innerHTML=vote
+
+
+// if...elseif....else
+
+
+// let hour=new Date().getHours();
+// let vote;
+
+// if(hour <10){
+//   vote="good morning"
+// }else if(hour <12){
+//   vote="good noon"
+// }else{
+//   vote="good evening"
+// }
+// document.getElementById("demo1").innerHTML=vote
+
+
+
+
+// switch case
+
+// let some;
+// switch(new Date().getDay()){
+//   case 0:
+//   some="Sunday"
+//   break;
+//   case 1:
+//   some="Monday"
+//   break;
+//   case 2:
+//   some="Tuesday"
+//   break;
+//   case 3:
+//   some="Wednesday"
+//   break; 
+//   case 4:
+//   some="Thursday"
+//   break;
+//   case 5:
+//   some="Friday"
+//   break;
+//   case 6:
+//   some="Saturday"
+//   break;
+// }
+// document.getElementById("demo1").innerHTML=some
+
+// let name;
+// switch(new Date().getDay()){
+//   case 6:
+//     name="today is saturday";
+//     break;
+
+
+//     case 0:
+//       name="today is sunday";
+//       break;
+   
+
+//       default:
+//         name="no week day"
+// }
+// document.getElementById("demo1").innerHTML=name
+
+
+// let name;
+// switch(new Date().getDay()){
+  
+//   default:
+//     name="no week day"
+// break;
+
+//   case 6:
+//     name="today is saturday";
+//     break;
+
+
+//     case 0:
+//       name="today is sunday";
+//       break;
+   
+
+// }
+// document.getElementById("demo1").innerHTML=name
+
+
+// let dd=1
+
+// switch (dd){
+//   case 0:
+//     text="OFF"
+//     break;
+//   case 1:
+//     text="ON"
+//     break;
+//     default:
+//     text="No value"
+// }
+// document.getElementById("demo1").innerHTML=text
+
+
+// FOR LOOP
+
+// let numberr=["niki","payal","vidhi","anee"];
+
+// let demo=""
+// for(let i=1;i<numberr.length;i++){
+//   demo += numberr[i] +"<br>"
+// }
+
+// document.getElementById("demo").innerHTML=demo
+
+
+
+// let textt="";
+
+// for(let i=0; i<=7; i++){
+//   textt += "My number is " + i +"<br>"
+// }
+// document.getElementById("demo").innerHTML=textt
+
+// let numberr=["niki","payal","vidhi","anee"];
+// let i=2;
+// let len=numberr.length
+// let demo="";
+
+// for(;i<len;i++){
+//   demo+=numberr[i]+"<br>"
+// }
+// document.getElementById("demo").innerHTML=demo
+
+
+
+// var j=6;
+
+// for(var j=0;j<198;j++){
+
+// }
+// document.getElementById("demo").innerHTML=j
+
+
+// let j=6;
+
+// for(let j=0;j<198;j++){
+
+// }
+// document.getElementById("demo").innerHTML=j
+
+
+// for in loop(object)
+
+
+// let name={fname:'niki',lname:'patel',age:24}
+
+// let demo=""
+
+// for(let s in name){
+//   demo +=name[s] +  ' ';
+// }
+// document.getElementById("demo").innerHTML=demo
+
+
+
+// let numm=[45,4,9,17,25,85]
+
+// let demo=""
+
+// for(let x in numm){
+//   demo += numm[x]+"<br>"
+// }
+// document.getElementById("demo").innerHTML=demo
+
+// for of loop(Array)
+
+// let car=["honda","bmw","verna","audi"]
+
+// let demo=""
+
+// for(let n of car){
+//   demo += n + "<br>"
+
+// }
+// document.getElementById("demo").innerHTML=demo
+
+
+// let language="Raectjs"
+
+// let demo=""
+
+// for(let p of language){
+//   demo += p 
+// }
+// document.getElementById("demo").innerHTML=demo
+
+
+// while Loop
+
+// let demo=""
+
+// let i=0;
+// while(i<=15){
+//   demo += "my numbner is " + i + "<br>"
+//   i++;
+// }
+// document.getElementById("demo").innerHTML=demo
+
+
+// do..while
+
+// let demo=""
+// let i=0;
+
+// do{
+//   demo += "my number is " + i +"<br>"
+//   i++;
+// }
+
+// while(i<45);
+// document.getElementById("demo").innerHTML=demo
+
+
+// for loop
+// let car=["honda","bmw","verna","audi"]
+
+// let i=0;
+// let demo=""
+
+// for(;car[i];){
+//   demo += car[i]+"<br>";
+//   i++
+
+// }
+// document.getElementById("demo").innerHTML=demo
+
+// while loop
+// let car=["honda","bmw","verna","audi"]
+
+// let i=0;
+// let demo=""
+
+// while(car[i]){
+//   demo += car[i]+"<br>";
+//   i++
+
+// }
+// document.getElementById("demo").innerHTML=demo
+
+
+// break
+
+// let demo=""
+// for(let i=0;i<15;i++){
+//   if(i===6){break}
+//   demo +=i+"<br>"
+// }
+// document.getElementById("demo").innerHTML=demo
+
+// Continue
+
+// let demo=""
+// for(let i=0;i<=15;i++){
+//   if(i===9){continue}
+//   demo +=i+"<br>"
+// }
+// document.getElementById("demo").innerHTML=demo
+
+
+
+// let color=['red','purple','blue','green','black'];
+
+// let demo=""
+
+// list:{
+//   demo +=color[0]+"<br>"
+//   demo +=color[1]+"<br>"
+//   break list
+//   demo +=color[2]+"<br>"
+//   demo +=color[3]+"<br>"
+//   demo +=color[4]+"<br>"
+
+// }
+// document.getElementById("demo").innerHTML=demo
+
+
+// map
+
+// let color=new Map([
+
+// ["red",52],
+// ["purple",520],
+// ["green",22],
+// ["yellow",62],
+// ])
+
+// let demo=""
+// for(let N of color){
+//   demo += N +"<br>"
+// }
+// document.getElementById("demo").innerHTML=demo
+
+
+// set
+
+
+// let color=new Set();
+
+// color.add("a")
+// color.add("b")
+// color.add("c")
+// color.add("d")
+// document.getElementById("demo").innerHTML=color.size
+
+
+// let color=new Set();
+
+// let a="a"
+// let b="b"
+// let c="c"
+
+// color.add("a")
+// color.add("b")
+// color.add("c")
+
+// document.getElementById("demo").innerHTML=color.size
+
+
+// let color=new Set(["a","b","c","d"]);
+
+// color.add("e")
+// color.add("f")
+// document.getElementById("demo").innerHTML=color.size
+
+
+// let color=new Set();
+
+// color.add("a")
+//  color.add("b")
+//  color.add("c")
+//  color.add("c")
+//  color.add("b")
+//  color.add("c")
+//  color.add("b")
+//  color.add("b")
+//  color.add("d")
+
+//  document.getElementById("demo").innerHTML=color.size
+
+
+// let color=new Map([
+//   ["red",200],
+//   ["green",100],
+//   ["blue",150],
+//   ["black",20]
+// ]);
+// document.getElementById("demo").innerHTML=color.get("black")
+
+
+// let color=new Map();
+
+// color.set("red",150);
+// color.set("blue",350);
+// color.set("green",950);
+// document.getElementById("demo").innerHTML=color.get("blue")
+
+// delete
+
+
+// let color=new Map([
+//   ["red",200],
+//   ["green",100],
+//   ["blue",150],
+//   ["black",20]
+// ]);
+
+// color.delete("green")
+// document.getElementById("demo").innerHTML=color.size
+
+
+// has
+// let color=new Map([
+//    ["red",200],
+//    ["green",100],
+//    ["blue",150],
+//    ["black",20]
+//  ]);
+//  document.getElementById("demo").innerHTML=color.has("blu")
+
+
+// let color=new Map([
+//    ["red",200],
+//    ["green",100],
+//    ["blue",150],
+//    ["black",20]
+//  ]);
+//  color.delete("green")
+//  document.getElementById("demo").innerHTML=color.has("green")
+
+// entries
+
+// let color=new Map([
+//    ["red",200],
+//    ["green",100],
+//    ["blue",150],
+//    ["black",20] 
+//    ]);
+//    let demo="";
+//    for(let S of color.entries()){
+//     demo += S +"<br>"
+//    }
+//    document.getElementById("demo").innerHTML=demo
+
+
+// typesof
+
+// let color;
+// document.getElementById("demo").innerHTML=typeof color;
+
+
+// let color="red"
+// color=undefined
+// document.getElementById("demo").innerHTML=color +"<br>" + typeof color;
+
+
+// let color="";
+// document.getElementById("demo").innerHTML= typeof color;
+
+
+// object
+
+// let name={fname:'niki',lname:"patel",field:'react'}
+// name=null;
+// document.getElementById("demo").innerHTML= typeof name;
+
+
+// let name={fname:'niki',lname:"patel",field:'react'}
+// name=undefined;
+// document.getElementById("demo").innerHTML= typeof name;
+
+
+// RegExpression
+  
+  // let name="i m in maxgen"
+  // let name1=name.search("Maxgen");
+  // document.getElementById("demo").innerHTML= name1
+
+  // let name="i m in maxgen"
+  // let name1=name.search(/Maxgen/i);
+  // document.getElementById("demo").innerHTML= name1
+
+// function FUN(){
+//   let num=document.getElementById("demo1").innerHTML
+//   document.getElementById("demo1").innerHTML=num.replace(/Morning/i,"Noooon")
+// }
+
+
+// operator precedence
+
+// document.getElementById("demo1").innerHTML=100+50*3
+// document.getElementById("demo1").innerHTML=(100+50)*3
+// document.getElementById("demo1").innerHTML=100 / 50 * 3;
+
+
+// js scope
+
+// Fun();
+
+// function Fun(){
+//   let names="Verna";
+
+//   document.getElementById("demo1").innerHTML=typeof names + names;
+// }
+// document.getElementById("demo2").innerHTML=typeof names ;
+
+
+
+// let names="NENo"
+// FUNN()
+
+// function FUNN(){
+//   document.getElementById("demo2").innerHTML= names ;
+// }
+
+
+// window
+
+// var demo="verna"
+// document.getElementById("demo2").innerHTML= window.demo
+
+
+// let demo="verna"
+// document.getElementById("demo2").innerHTML= window.demo
+// }
+
+
+
+// Hoisiting
+
+
+// x=6;
+
+// elem=document.getElementById("demo2");
+// elem.innerHTML=x;
+
+
+// var x;
+
+// var x;
+// x=6;
+// elem=document.getElementById("demo2");
+// elem.innerHTML=x;
+
+
+// var x=4;
+// var y=9;
+
+// elem=document.getElementById("demo2");
+// elem.innerHTML=x + " " + y;
+
+
+// var x=4;
+
+
+// elem=document.getElementById("demo2");
+// elem.innerHTML=x + " " + y;
+
+// var y=9;
+
+
+
+// var x=4;
+// y=9;
+
+
+// elem=document.getElementById("demo2");
+// elem.innerHTML=x + " " + y;
+
+
+
+// This keyword
+
+// let name={
+//   fname:'niki',
+// lname:'vidhi',
+// sname:'patelgohil',
+// Fullname:function(){
+//   return this.fname + " " + this.sname
+// }
+// }
+// document.getElementById("demo2").innerHTML= name.Fullname()
+
+
+
+// let x=this;
+// document.getElementById("demo2").innerHTML= x
+
+
+// BIND
+
+// let name={
+//    fname:'niki',
+//  lname:'vidhi',
+//   sname:'patelgohil',
+//   full:function(){
+//     return this;
+//   }
+// }
+// document.getElementById("demo2").innerHTML= name.full()
+
+// CALL
+
+// let name1={
+//   fun:function(){
+//     return this.fname + " "+ this.lanme
+//   }
+// }
+
+// let name2={
+//   fname:"niki",
+//   lanme:'vidhi'
+// }
+
+// let x=name1.fun.call(name2)
+// document.getElementById("demo2").innerHTML= x
+
+
+// bind
+// let numberr={
+//   fname:'niki',
+//   lname:'vidhi',
+//   FUN:function(){
+//     return this.fname+" " + this.lname
+//   }
+// }
+
+// let numberr1={
+//   fname:'patel',
+//   lname:'gohil'
+// }
+
+// let demo=numberr.FUN.bind(numberr)
+// document.getElementById("demo2").innerHTML= demo()
+
+
+// ARROW FUNCTION()
+
+// let fun=(x,y)=>x + y;
+// document.getElementById("demo2").innerHTML= fun(5 , 3)
+
+// let demo=""
+
+// demo =function(){
+//   return "HELLLLO";
+// }
+// document.getElementById("demo2").innerHTML=demo()
+
+// let demo=""
+
+// demo=()=>{
+//   return "HE:LLLLO"
+// }
+// document.getElementById("demo2").innerHTML=demo()
+
+
+// let demo=""
+
+
+// demo=()=>"HIIIIIi";
+// document.getElementById("demo2").innerHTML=demo()
+
+// let demo=""
+
+
+// demo=(val)=>"hello"
+// document.getElementById("demo2").innerHTML=demo()
+
+// let demo=""
+
+// demo=val=>"hello"
+// document.getElementById("demo2").innerHTML=demo()
+
+
+// classes
+
+
+  </script>
+
+</html>

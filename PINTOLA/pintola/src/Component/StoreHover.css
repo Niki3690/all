@@ -1,0 +1,16 @@
+.storeHover{
+    display: grid;
+    grid-template-columns: 190px 190px 190px 190px 190px;
+    justify-content: center;
+    gap:15px
+
+}
+
+img{
+    height: 140px;
+}
+
+p{
+ justify-content: center;
+
+}

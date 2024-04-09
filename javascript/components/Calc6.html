@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <title>Document</title>
+</head>
+
+<body style="background-color: paleturquoise;height: 518px;">
+  <!--[Simple calculator using JavaScrip] -->
+
+  <div class="section">
+    <div class="container">
+      <div class="columns is-centered" style="margin-top: 145px;">
+        <div class="column is-3">
+
+          <input class="input is-danger" name="first" id="first" placeholder="First Number" /><br /><br />
+        </div>
+        <div class="column is-3">
+          <input class="input is-danger" name="second" id="second" placeholder="Second Number" /><br /><br />
+        </div>
+      </div>
+
+      <center>
+        <div class="columns  is-centered">
+          <div class="column is-3">
+
+            <div class="select is-danger">
+              <select id="select">
+                <option>Select</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+              </select>
+            </div>
+          </div>
+          <div class="column is-3">
+            <button class="button is-danger" onclick="Cal()">Calculate</button>
+          </div>
+        </div>
+    </div>
+    </center>
+    <br /><br />
+
+    <div class="columns is-centered">
+      <div class="column is-6">
+        <input class="input is-danger" name="result" id="result" placeholder="Output" readonly /><br /><br />
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script>
+  function Cal() {
+    var option = document.getElementById("first").value;
+    var option1 = document.getElementById("second").value;
+    var select = document.getElementById("select").value;
+
+    if (select == "+") {
+      var result = parseInt(option) + parseInt(option1);
+    }
+
+    if (select == "-") {
+      var result = parseInt(option) - parseInt(option1);
+    }
+
+    if (select == "*") {
+      var result = parseInt(option) * parseInt(option1);
+    }
+
+    if (select == "/") {
+      var result = parseInt(option) / parseInt(option1);
+    }
+    document.getElementById("result").value = result;
+    //   alert(opt);
+    //   alert(opt1);
+    //   alert(select)
+    // alert(result);
+    // console.log(result);
+  }
+</script>
+
+</html>

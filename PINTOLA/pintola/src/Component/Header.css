@@ -1,0 +1,90 @@
+img {
+  height: 45px;
+  margin-top: -15px;
+}
+
+.header {
+  background-color: #fcf7ef;
+  display: flex;
+  padding-top: 35px;
+  padding-left: 55px;
+  padding-bottom: 10px;
+  height: 80px;
+  margin-bottom: 15px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  color: #423812;
+  font-weight: 500;
+}
+
+ul li:hover {
+  color: #f06e27;
+  cursor: pointer;
+}
+
+li {
+  padding-right: 35px;
+  cursor: pointer;
+}
+
+.store {
+  margin-left: 85px;
+  margin-top: -12px;
+}
+
+.storeHover {
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  display: none;
+}
+
+.store:hover .storeHover {
+  display: block;
+}
+
+.btn {
+  background-color: #f06e27;
+  color: white;
+  border: none;
+  padding: 12px 14px;
+  border-radius: 25px;
+  font-size: 14px;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+.hello {
+  font-size: 11px;
+}
+
+.faa {
+  margin-left: 25px;
+}
+
+.sea {
+  margin-left: 12px;
+}
+
+.cart {
+  margin-left: 2px;
+}
+
+.active-link {
+  color: red;
+  /* Change to your desired active link color */
+}
+
+.pp {
+  margin-top: -12px;
+}
+
+.ii {
+  margin-top: -40px;
+}
+
+.ix {
+  margin-top: -75px;
+}

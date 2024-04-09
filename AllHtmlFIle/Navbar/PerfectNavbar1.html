@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVBAR</title>
+  </head>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+
+    .container {
+      text-align: center;
+      background-color: rgb(207, 207, 124);
+    }
+    ul li {
+      position: relative;
+      display: inline-block;
+    }
+
+    ul li a {
+      display: block;
+      font-size: 22px;
+      text-decoration: none;
+      padding: 15px;
+      color: black;
+    }
+
+    ul li a:hover {
+      background-color: black;
+      color: whitesmoke;
+    }
+
+    ul li ul.name {
+      position: absolute;
+      width: 150%;
+      background-color: rgb(207, 207, 124);
+      display: none;
+    }
+
+    ul li ul.name li {
+      display: block;
+    }
+
+    ul li:hover ul.name {
+      display: block;
+    }
+    ul li ul.name li:hover ul.mm {
+      display: block;
+    }
+    ul li ul.name ul.mm {
+      position: absolute;
+      left: 100%;
+      top: 0;
+      background-color: rgb(207, 207, 124);
+      display: none;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li>
+          <a href="#">Career</a>
+
+          <ul class="name">
+            <li><a href="#">Developer</a></li>
+            <li><a href="#">Senior</a></li>
+            <li><a href="#">Junior</a></li>
+            <li><a href="#">Manager</a></li>
+            <li><a href="#">Developer</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li>
+          <a href="#">Services</a>
+          <ul class="name">
+            <li><a href="#">abc@gmail.com</a></li>
+            <li><a href="#">def@gmail.com</a></li>
+            <li>
+              <a href="#">geh@gmail.com</a>
+              <ul class="mm">
+                <li><a href="#">Niki</a></li>
+                <li><a href="#">Vidhi</a></li>
+                <li><a href="#">Diya</a></li>
+                <li><a href="#">Hiral</a></li>
+              </ul>
+            </li>
+            <li><a href="#">ijk@gmail.com</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Internship</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

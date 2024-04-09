@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="https://somoorish.com.au/image/Favicon.png" />
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Lato", sans-serif;
+    }
+
+    .demo img {
+      height: 550px;
+      width: 100%;
+      transition: 1.5s;
+    }
+
+    .demo img:hover {
+      transform: scale(1.1);
+    }
+
+    .demo {
+      height: 550px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .top-left {
+      position: absolute;
+      top: 155px;
+      left: 40px;
+      color: white;
+    }
+
+    .nn {
+      position: absolute;
+      top: 200px;
+      left: 40px;
+      line-height: 27px;
+      color: white;
+      font-weight: 500;
+    }
+
+    .nnnn {
+      position: absolute;
+      top: 360px;
+      left: 40px;
+      padding: 12px 22px;
+      color: palevioletred;
+      font-weight: 700;
+    }
+
+    .nnnn:hover {
+      background-color: palevioletred;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .hh {
+      font-size: 38px;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .grr img {
+      height: 351px;
+      width: 351px;
+      transition: 1s;
+      position: relative;
+    }
+
+    .grr {
+      height: 351px;
+      width: 351px;
+      overflow: hidden;
+    }
+
+    .grr img:hover {
+      transform: scale(1.1);
+    }
+
+    .jj {
+      display: flex;
+      gap: 150px;
+    }
+
+    .mmm {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      width: 351px;
+      position: relative;
+      padding-bottom: 25px;
+    }
+
+    .oo {
+      position: absolute;
+      top: 295px;
+      right: 45px;
+      display: none;
+    }
+
+    .grr img:hover + .oo {
+      display: block;
+    }
+
+    .ho h2,
+    p {
+      padding-left: 15px;
+      margin-top: 15px;
+    }
+
+    .jj h3 {
+      padding-left: 15px;
+      margin-top: 15px;
+    }
+
+    .ppp {
+      display: grid;
+      grid-template-columns: 250px 250px 250px;
+      gap: 145px;
+      margin-left: 60px;
+      margin-top: 45px;
+    }
+  </style>
+
+  <body>
+    <div class="demo">
+      <img
+        src="https://somoorish.com.au/admin/sliderzimage/somoorish_banner.webp"
+      />
+
+      <div>
+        <h1 class="top-left">Soo Moorish</h1>
+        <p class="nn">
+          Manufactured in Melbourne, From Local and Quality Ingredients. At
+          So<br />
+          Moorish Foods we simply love gorgeous luxury chocolate. We cater to<br />
+          the premium chocolate lover, yet our chocolates are affordable for<br />
+          everyone.
+        </p>
+
+        <div><button class="nnnn">SHOP NOW</button></div>
+      </div>
+    </div>
+
+    <h1 class="hh">Premium Collection</h1>
+
+    <div class="ppp">
+      <div class="mmm">
+        <div class="grr">
+          <img
+            src="https://www.somoorish.com.au/admin/product_image/12-130gmilkchocolateMACADAMIA.webp"
+          />
+
+          <p class="oo">WELCOME</p>
+        </div>
+        <div class="ho">
+          <h2>
+            Roasted Macadamia - Milk<br />
+            Chocolate
+          </h2>
+
+          <p>No ratings yet</p>
+          <div class="jj">
+            <h3>$9.24</h3>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mmm">
+        <div class="grr">
+          <img
+            src="https://www.somoorish.com.au/admin/product_image/7-130gdarkchocolateMACADAMIA.webp"
+          />
+
+          <p class="oo">WELCOME</p>
+        </div>
+        <div class="ho">
+          <h2>
+            Roasted Macadamia - Milk<br />
+            Chocolate
+          </h2>
+
+          <p>No ratings yet</p>
+          <div class="jj">
+            <h3>$9.24</h3>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mmm">
+        <div class="grr">
+          <img
+            src="https://www.somoorish.com.au/admin/product_image/1-130gcocoadusteddarkchocolatealmond.webp"
+          />
+
+          <p class="oo">WELCOME</p>
+        </div>
+        <div class="ho">
+          <h2>
+            Roasted Macadamia - Milk<br />
+            Chocolate
+          </h2>
+
+          <p>No ratings yet</p>
+          <div class="jj">
+            <h3>$9.24</h3>
+            <button>Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

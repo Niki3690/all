@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnmouseOver-OnmouseOut</title>
+  </head>
+  <style>
+    h1 {
+      color: brown;
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <h1 onmouseover="Over()" onmouseout="Out()" id="name">
+        I am leave in Ahmedabad.
+      </h1>
+    </div>
+
+    <script>
+      function Over() {
+        document.getElementById("name").style.color = "blue";
+      }
+
+      function Out() {
+        document.getElementById("name").style.color = "green";
+      }
+    </script>
+  </body>
+</html>

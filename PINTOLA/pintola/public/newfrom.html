@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <label>Add work history</label>
+    <br />
+    <button
+      id="showPopupButton"
+      style="border: none; background-color: transparent; font-size: 35px"
+    >
+      +
+    </button>
+    <br /><br />
+
+    <textarea
+      cols="151"
+      rows="4"
+      style="border-radius: 5px"
+      id="workHistory"
+      readonly
+    ></textarea>
+
+    <div id="popupForm" class="popup">
+      <span class="close" id="closeButton">&times;</span>
+
+      <form id="companyDetailsForm">
+        <h3 style="text-align: center">Enter Company Details</h3>
+        <div style="width: 300px; margin-left: auto; margin-right: auto">
+          <div class="form">
+            <input
+              type="text"
+              class="textbox"
+              style="height: 40px; width: 95%; color: black"
+              id="companyName"
+            />
+            <label class="formlabel"> Company name </label><br />
+          </div>
+          <br />
+
+          <div class="form">
+            <input
+              type="text"
+              class="textbox"
+              style="height: 40px; width: 95%; color: black"
+              id="title"
+            />
+            <label class="formlabel"> Title </label><br />
+          </div>
+          <br />
+
+          <div class="form">
+            <input
+              type="text"
+              class="textbox"
+              style="height: 40px; width: 95%; color: black"
+              id="currentRole"
+            />
+            <label class="formlabel"> Current Role </label><br />
+          </div>
+          <br />
+
+          <div style="display: flex; gap: 19px">
+            <div>
+              <select
+                style="
+                  height: 60px;
+                  border-radius: 4px;
+                  padding: 0px 55px 0px 55pxpx;
+                  border: 1px solid gray;
+                  width: 132px;
+                  padding-left: 9px;
+                "
+                id="startMonth"
+              >
+                <option>Start Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>Aug</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+                <!-- Add other months here -->
+              </select>
+            </div>
+            <div>
+              <select
+                style="
+                  height: 60px;
+                  border-radius: 4px;
+                  padding: 0px 55px 0px 55pxpx;
+                  border: 1px solid gray;
+                  width: 132px;
+                  padding-left: 9px;
+                "
+                id="startYear"
+              >
+                <option>Start Month</option>
+                <option>Jan</option>
+                <option>Feb</option>
+                <option>Mar</option>
+                <option>Apr</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>Aug</option>
+                <option>Sep</option>
+                <option>Oct</option>
+                <option>Nov</option>
+                <option>Dec</option>
+
+                <!-- Add other years here -->
+              </select>
+            </div>
+          </div>
+
+          <div style="display: flex; gap: 19px; margin-top: 20px">
+            <div>
+              <select
+                style="
+                  height: 60px;
+                  border-radius: 4px;
+                  padding: 0px 55px 0px 55pxpx;
+                  border: 1px solid gray;
+                  width: 132px;
+                  padding-left: 9px;
+                "
+                id="endMonth"
+              >
+                <option>Start Year</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <!-- Add other months here -->
+              </select>
+            </div>
+            <div>
+              <select
+                style="
+                  height: 60px;
+                  border-radius: 4px;
+                  padding: 0px 55px 0px 55pxpx;
+                  border: 1px solid gray;
+                  width: 132px;
+                  padding-left: 9px;
+                "
+                id="endYear"
+              >
+                <option>End Year</option>
+                <option>2010</option>
+                <option>2011</option>
+                <option>2012</option>
+                <option>2013</option>
+                <option>2014</option>
+                <option>2015</option>
+                <option>2016</option>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <!-- Add other years here -->
+              </select>
+            </div>
+          </div>
+
+          <input
+            type="checkbox"
+            id="check1"
+            name="check1"
+            style="margin-top: 20px; margin-left: 15px"
+          />
+          <label
+            for="check1"
+            style="margin-left: 15px; font-weight: 600; cursor: pointer"
+            >Present</label
+          >
+
+          <div style="display: flex; margin-left: 179px; gap: 25px">
+            <div>
+              <button
+                style="
+                  border: none;
+                  outline: none;
+                  background-color: transparent;
+                  color: green;
+                  font-weight: 700;
+                  cursor: pointer;
+                "
+                id="cancelButton"
+              >
+                Cancel
+              </button>
+            </div>
+
+            <div>
+              <button
+                style="
+                  border: none;
+                  outline: none;
+                  background-color: transparent;
+                  color: green;
+                  font-weight: 700;
+                  cursor: pointer;
+                "
+                id="saveButton"
+              >
+                Save
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script>
+      document
+        .getElementById("saveButton")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          const companyName = document.getElementById("companyName").value;
+          const title = document.getElementById("title").value;
+          const currentRole = document.getElementById("currentRole").value;
+          const startMonth = document.getElementById("startMonth").value;
+          const startYear = document.getElementById("startYear").value;
+          const endMonth = document.getElementById("endMonth").value;
+          const endYear = document.getElementById("endYear").value;
+          const isPresent = document.getElementById("check1").checked;
+
+          if (
+            !companyName ||
+            !title ||
+            !currentRole ||
+            !startMonth ||
+            !startYear ||
+            (!isPresent && (!endMonth || !endYear))
+          ) {
+            // alert("Please fill in all required fields.");
+            return;
+          }
+          const workHistoryTextarea = document.getElementById("workHistory");
+
+          // Create a string with the entered data
+          let companyDetails = `Company name:- ${companyName} Title:- ${title} Current role:- ${currentRole} Start Month:-${startMonth} Start Year:-${startYear}`;
+          if (!isPresent) {
+            companyDetails += ` - ${endMonth} ${endYear}`;
+          }
+
+          // Append the company details to the workHistory textarea
+          if (workHistoryTextarea.value) {
+            workHistoryTextarea.value += "\n" + companyDetails;
+          } else {
+            workHistoryTextarea.value = companyDetails;
+          }
+
+          // Reset the form
+          document.getElementById("companyDetailsForm").reset();
+
+          if (!startMonth) {
+            document.getElementById("endMonth").disabled = true;
+            document.getElementById("endYear").disabled = true;
+          } else {
+            document.getElementById("endMonth").disabled = false;
+            document.getElementById("endYear").disabled = false;
+          }
+        });
+
+      // Add an event listener to the Start Month dropdown
+      document
+        .getElementById("startMonth")
+        .addEventListener("change", function () {
+          // Enable or disable endMonth and endYear based on the selection
+          const startMonth = document.getElementById("startMonth").value;
+          if (!startMonth) {
+            document.getElementById("endMonth").disabled = true;
+            document.getElementById("endYear").disabled = true;
+          } else {
+            document.getElementById("endMonth").disabled = false;
+            document.getElementById("endYear").disabled = false;
+          }
+        });
+    </script>
+  </body>
+</html>

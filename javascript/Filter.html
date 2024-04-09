@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+  </body>
+
+  <script>
+    const ages = [32, 33, 16, 40,22,25,50,369];
+
+    document.getElementById("demo").innerHTML = ages.filter(checkAdult);
+
+    function checkAdult(age) {
+      return age >=24;
+    }
+  </script>
+</html>
+
+
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p><input type="number" id="ageToCheck" value="30"></p>
+    <button onclick="myFunction()">Test</button>
+
+    <p id="demo"></p>
+</body>
+
+
+<script>
+    const ages = [32, 33, 12, 40];
+
+    function checkAge(age) {
+        return age > document.getElementById("ageToCheck").value;
+    }
+
+    function myFunction() {
+        document.getElementById("demo").innerHTML = ages.filter(checkAge);
+    }
+</script> -->
+
+</html>

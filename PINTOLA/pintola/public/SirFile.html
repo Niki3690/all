@@ -1,0 +1,1643 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Bootstrap link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome cdn link -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- css part -->
+
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .head-main {
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+          rgba(0, 0, 0, 0.23) 0px 6px 6px;
+        padding: 10px;
+        display: flex;
+        background-color: #fedc1d;
+      }
+      .head-main-arrow {
+        margin-left: 10px;
+        padding: 2px;
+      }
+      .head-main-name {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        gap: 25px;
+      }
+      .head-main-h3-div {
+        padding: 2px;
+      }
+      .head-main-h3 {
+        display: inline;
+        margin-left: 25px;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+      }
+      .head-main-home {
+        padding: 2px;
+        margin-right: 5px;
+      }
+      .fa-solid {
+        color: rgb(250, 245, 245);
+      }
+
+      .profiles-images-div {
+        height: 200px;
+        width: 95%;
+        margin: auto;
+        margin-top: 50px;
+
+      }
+
+      .profiles-images {
+        position: relative;
+        height: 175px;
+        width: 175px;
+        margin: 10px 0 0 20px;
+      }
+
+      .image-upload-circle {
+        object-fit: cover;
+        height: 170px;
+        width: 170px;
+        margin: 10px 0 0 1px;
+        border-radius: 50%;
+        box-shadow: 0 0 0 5px #ddd;
+      }
+
+      .fa-image{
+        position: absolute;
+
+        padding: 20px 10px;
+        border-radius: 50%;
+        top: 230px;
+        left: 207px;
+        color: black;
+        background-color: #fedc1d;
+      }
+
+      .custom-file input[type="file"] {
+        display: none;
+      }
+
+      .custom-file label {
+        cursor: pointer;
+      }
+
+      .input {
+        margin-top: 15px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.13) 0px 6px 0px;
+      }
+      .input1{
+        margin: 15px 0 27px 0;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.13) 0px 6px 0px;
+      }
+
+      .counter-no{
+        margin: auto;
+        width: 98%;
+       
+        display: block;
+        display: flex;
+        justify-content: end;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-bottom: -15px;
+       
+      }
+      .counter-no1{
+        margin: auto;
+        width: 98%;
+        
+        display: block;
+        display: flex;
+        justify-content: end;
+        font-size: 12px;
+        margin-top: -20px;
+        margin-bottom: -20px;
+       
+      }
+
+      .country{
+        width: 50%;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.13) 0px 6px 0px;
+      }
+      .state{
+        width: 50%;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.13) 0px 6px 0px;
+      }
+      .city{
+        margin-top: 17px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+        rgba(0, 0, 0, 0.13) 0px 6px 0px;
+      }
+
+      .select_option{
+        gap: 10px;
+        margin-top: 25px;
+        display: flex;
+      }
+
+      .history{
+      
+        margin-top:10px;
+        padding-top: 15px;
+        height: 210px;
+        border: none;
+        border-radius: 0;
+      }
+      .fa-plus{
+    display: block;
+    
+        color: black;
+      display: flex;
+      justify-content: center;
+     
+      }
+
+      .history1{
+
+        text-align: center;
+      }
+      .history3{
+       
+        text-align: center;
+      }
+      .edu{
+        margin-top: 15px;
+      }
+
+      .history2{
+        
+        height: 200px;
+        border: none;
+        border-radius: 0; 
+      }
+
+      .work{
+       position: relative;
+        overflow-y: scroll;
+        display: none;
+        border-radius: 0;
+        height: 150px;
+      }
+      .education{
+        padding: 50px;
+        margin-top: 10px;
+        
+        border:none;
+        border-radius: 0;
+      }
+
+      .topic{
+        border:1px solid black;
+        border-radius: 0;
+        min-height: 50px;
+        height: auto;
+      }
+      .addmore{
+        height: 30px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+      }
+      .addmore1{
+        display: flex;
+        border-radius: 50%;
+        font-size: small;
+        width: 20px;
+        height: 20px;
+        color: #ddd;
+        background-color: rgb(10, 142, 236);
+       align-items: center;
+      }
+      .addmore2{
+        border-radius: 50px;
+       height: 20px;
+       font-size: 12px;
+       padding: 0 5px;
+    font-weight: 700;
+        
+       
+      }
+.topic-detail{
+  
+
+font-size: 14px;
+
+text-align: center;
+}
+
+.select_option1{
+  width: 100%;
+display: flex;
+gap: 10px;
+margin-top: 25px;
+}
+.price{
+  margin-left: 25px;
+  width: 45%;
+  border-radius: 10px;
+
+}
+.duration{
+    width: 45%;
+  border-radius: 10px;
+
+}
+.input2{
+  padding: 25px 10px;
+  width: 96%;
+  margin: auto;
+  margin-top: 10px;
+  
+  border-radius: 10px;
+  
+}
+.counter-no2{
+  margin: auto;
+  width: 96%;
+  
+  display: block;
+  display: flex;
+  justify-content: end;
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: -20px;
+}
+.btn-submit{
+  padding: 5px 20px;
+  background-color: #fedc1d;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+}
+.btn-cancel{
+  padding: 5px 20px;
+  background-color: #ddd;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+
+}
+.topic-cover{
+  border-radius:50px;margin-top:15px;border:1px solid black
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.popup .addtohistory {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+}
+.popup1 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.popup1 .addtoeducation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+}
+
+.lang {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.lang .select-languages {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  
+}
+
+.checkbox1{
+  justify-content:left;
+  display:flex;
+  gap:25px ;
+  align-items:center;
+  padding-left:45px;
+  
+}
+.checkbox1 {
+  font-size: 16px;
+ margin-top: 5px;
+  
+}
+.textbox{
+  width:25px;
+  height: 25px;
+ 
+}
+
+.display-lang {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+  }
+  
+  .lang {
+    height: 100%;
+    display: none;
+    z-index: 1;
+  }
+  
+  body.popup-open {
+    overflow: hidden;
+  }
+
+
+  .span1{
+    font-weight: 600;
+    font-size: 16px;
+    margin-left: 10px;
+    padding:3px 10px !important;
+     border-radius: 50px !important;
+      border: 1px solid black !important;
+     transform: translate(50%, 50%) !important;
+     background-color: #fedc1d !important;
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+    
+}
+
+
+.fa-ellipsis{
+ 
+  color: #fedc1d;
+  display: flex;
+  justify-content: end;
+  
+  width: 95%;
+}
+.fa-circle-minus{
+  color: red;
+  display: flex;
+  justify-content: end;
+  
+  width: 95%;
+}
+.fa-ellip{
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+
+    </style>
+  </head>
+  <body>
+    <div class="head-main container-fluid">
+      <div class="head-main-arrow">
+        <i class="fa-solid fa-arrow-left fa-lg"></i>
+      </div>
+      <div class="head-main-name">
+        <div class="head-main-h3-div">
+          <h3 class="head-main-h3">Add Mentor</h3>
+        </div>
+        <div class="head-main-home">
+          <i class="fa-solid fa-house fa-lg"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="Main-form">
+      <div class="profiles-images-div  container-fluid">
+        <div class="profiles-images">
+          <img
+            src="https://www.transparentpng.com/thumb/user/blue-male-user-profile-transparent-png-2lbgMx.png"
+            alt=""
+            id="upload-img"
+            class="image-upload-circle"
+          />
+        </div>
+        <div class="custom-file">
+          <label for="fileupload"
+            ><i class="fa-solid fa-image fa-lg"></i
+          ></label>
+          <input type="file" id="fileupload" />
+        </div>
+      </div>
+
+      <div class="form-main">
+        <form class="form-action" style="width: 92%; margin: auto" action="" >
+          <input
+            type="text"
+            class="form-control input"
+            id="name2"
+            placeholder="Your Name"
+            formcontrol
+          />
+          <input
+            type="email"
+            class="form-control input"
+            id="email1"
+            placeholder="Your Email"
+          />
+          <input
+            type="text"
+            class="form-control input"
+            id="email1"
+            placeholder="Your Title"
+          />
+
+          
+
+          <input
+            type="text"
+            class="form-control input1"
+            id="inputField" oninput="updateCounter(this)" maxlength="25"
+            placeholder="Your HeadLine"
+            formcontrol
+          />
+          <span class="counter-no" id="counter">0/25</span>
+
+          <input
+            type="text"
+            class="form-control input1"
+            id="inputField" oninput="updateCounter1(this)" maxlength="300"
+            placeholder="About You"
+            formcontrol
+            
+          />
+          <span class="counter-no1" id="counter1">0/500</span>
+
+          <div class="select_option">
+            <select class="form-select country form-control" aria-label="Default select example" onchange="loadStates()">
+                <option selected>Country</option>
+            </select>
+            <select class="form-select state form-control"  aria-label="Default select example" onchange="loadCities()">
+                <option selected>State</option>
+            </select>
+            
+        </div>
+        <select class="form-select city form-control" aria-label="Default select example">
+          <option selected>City</option>
+      </select>
+
+      <div style="background-color: white;width:100%;padding:0;height:auto;border-radius:10px;  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.13) 0px 5px 0px;" class="form-control input">
+        <div class="form-select "  style="border: none;border-radius:10px;margin:0;width:100%;height:40px" aria-label="Default select example" id="showPopupButton3">
+          <h6>Select Languages</h6>
+          
+          
+        
+        </div>
+  
+  
+          <div
+               type="text"class="display-lang form-control"
+          style="border: none;border-radius:10px;margin:0;width:100%;height:50px;padding-left:5px;" 
+          id="name1" formcontrol >
+            </div>
+            
+           
+  
+            <div id="popupform3" class="lang form-control " >
+              
+  
+              <div class="select-languages" style="width:25%;margin:auto;padding-bottom: 15px;background-color:white;" action="" method="POST" onsubmit="return false;">
+                <h3 style="text-align: center;margin-bottom:25px;padding-top:15px">Select Languages</h3>
+                <div style="width: 350px; margin-left: auto; margin-right: auto; " >
+                  <div class="form checkbox1" >
+                    <input type="checkbox" class="textbox" style="color: black;"  />
+                    English
+                  </div><br />
+        
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Hindi
+                  </div><br>
+        
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Bengali
+                  </div><br>
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Telugu
+                  </div><br />
+        
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Marathi
+                  </div><br>
+        
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Tamil
+                  </div><br>
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Gujarati
+                  </div><br />
+        
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Urdu
+                  </div><br>
+        
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Kannada
+                  </div><br>
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Odia
+                  </div><br>
+        
+                  <div class="form checkbox1">
+                    <input type="checkbox" class="textbox" style="color: black" />
+                    Punjabi
+                  </div>
+        
+                 
+        
+                 
+                  <div style="display: flex;justify-content: flex-end; gap: 35px;width:70%;margin:auto;margin-top:20px; ">
+                    <div>
+                      <button id="lang-cancel" type="button" style="
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        color: #fedc1d;
+                        font-weight: 700;
+                        font-size:20px;
+                        cursor: pointer;
+                      " class="cancel-langs">
+                        Cancel
+                      </button>
+                    </div>
+        
+                    <div>
+                      <button style="
+                      font-size:20px;
+                        border: none;
+                        outline: none;
+                        background-color: transparent;
+                        color: #fedc1d;
+                        font-weight: 700;
+                        cursor: pointer;
+                      " id="ok-lang">
+                        Ok
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              </div>
+      </div>
+    <hr>
+    
+  
+    <h5>Links</h5>
+
+         <input
+            type="text"
+            class="form-control input"
+            id="name3"
+            placeholder="Enter Linkedin Link (Optional)"
+            formcontrol
+          />
+
+          <input
+            type="text"
+            class="form-control input"
+            id="name4"
+            placeholder="Enter Website Link (Optional)"
+            formcontrol
+          />
+
+          <hr>
+
+          <h5>Experience And Education</h5>
+
+          <select class="form-select input form-control" aria-label="Default select example">
+            <option selected>Years of Experience</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+            <div class="form-control history">
+                
+                <p class="history1">Add Work history</p>
+                <i class="fa-solid fa-plus"  id="showPopupButton"></i>
+                
+                <div id="popupForm" class="popup">
+                
+
+                    
+            
+                <div class="addtohistory" action="" method="POST" onsubmit="return false;">
+                    <h3 style="text-align: center">Enter Company Details</h3>
+                    <div style="width: 300px; margin-left: auto; margin-right: auto">
+                    <div class="form">
+                        <input type="text" id="company-name-text" class="textbox1"  name="Company name" style="height: 40px; width: 95%; color: black" />
+                        <label class="formlabel">Company name</label><br />
+                    </div><br />
+            
+                    <div class="form">
+                        <input type="text" id="company-title-text" class="textbox1" name="Title1" style="height: 40px; width: 95%; color: black" />
+                        <label class="formlabel">Title</label><br />
+                    </div><br>
+            
+                    <div class="form">
+                        <input type="text" id="company-role-text" class="textbox1" name="Current Role" style="height: 40px; width: 95%; color: black" />
+                        <label class="formlabel"> Current Role </label><br />
+                    </div><br>
+            
+                    <div style="display: flex; gap: 19px">
+                        <div>
+                        <select  id="startMonth" style="
+                            height: 60px;
+                            border-radius: 4px;
+                            padding: 0px 55px 0px 55pxpx;
+                            border: 1px solid gray;
+                            width: 132px;
+                            padding-left: 9px;
+                        ">
+                            <option>Start Month</option>
+                            <option>January</option>
+                            <option>February</option>
+                            <option>March</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                            <option>July</option>
+                            <option>August</option>
+                            <option>September</option>
+                            <option>October</option>
+                            <option>November</option>
+                            <option>December</option>
+                        </select>
+                        </div>
+                        <div>
+                        <div>
+                            <select style="
+                            height: 60px;
+                            border-radius: 4px;
+                            padding: 0px 55px 0px 55pxpx;
+                            border: 1px solid gray;
+                            width: 132px;
+                            padding-left: 9px;
+                            " id="currentYearSelect" onchange="updateSelectedYears()">
+                            <option value="">Start Year</option>
+                            
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+            
+                    <div style="display: flex; gap: 19px; margin-top: 20px">
+                        <div>
+                        <select name="endMonth" id="startMonth1" style="
+                            height: 60px;
+                            border-radius: 4px;
+                            padding: 0px 55px 0px 55pxpx;
+                            border: 1px solid gray;
+                            width: 132px;
+                            padding-left: 9px;
+                        ">
+                        <option selected>End Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                        </select>
+                        </div>
+                        <div>
+                        <div>
+                            <select name="endYear" style="
+                            height: 60px;
+                            border-radius: 4px;
+                            padding: 0px 55px 0px 55pxpx;
+                            border: 1px solid gray;
+                            width: 132px;
+                            padding-left: 9px;
+                            " id="selectedYearSelect">
+                            <option selected>End Year</option>
+                            
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+            
+                    <input type="checkbox" id="check1" name="check1" style="margin-top: 20px; margin-left: 15px" /><label
+                        for="check1" style="margin-left: 15px; font-weight: 600; cursor: pointer">Present</label>
+            
+                    <div style="display: flex; margin-left: 179px; gap: 25px">
+                        <div>
+                        <button id="cancel-form" type="button" style="
+                            border: none;
+                            outline: none;
+                            background-color: transparent;
+                            color: green;
+                            font-weight: 700;
+                            cursor: pointer;
+                        " class="cancel-form">
+                            Cancel
+                        </button>
+                        </div>
+            
+                        <div>
+                        <button class="cancel-form" type="button" style="
+                            border: none;
+                            outline: none;
+                            background-color: transparent;
+                            color: green;
+                            font-weight: 700;
+                            cursor: pointer;
+                        " id="save-form">
+                            Save
+                        </button>
+                        </div>
+                    </div>
+                    </div>
+                </div
+                
+                >
+            
+            </div>
+
+
+                <div
+                type="text"
+                class="form-control work"
+                id="name5" 
+                >
+
+                <div id="showhistorydetails">
+                    
+                
+                </div>
+                
+
+            </div>
+
+            </div>
+         
+          <hr>
+          <div class="form-control history2">
+            <p class="history3">Add Education history</h5>
+              <i class="fa-solid fa-plus edu" id="showPopupButton2"></i>
+
+              <div id="popupForm1" class="popup1">
+            
+
+          
+                <div class="addtoeducation " action="" method="POST" onsubmit="return false;">
+                  <h3 style="text-align: center">Enter Education Details</h3>
+                  <div style="width: 300px; margin-left: auto; margin-right: auto">
+                    <div class="form">
+                      <input type="text" class="textbox " style="height: 40px; width: 95%; color: black" />
+                      <label class="formlabel">Institute name</label><br />
+                    </div><br />
+          
+                    <div class="form">
+                      <input type="text" class="textbox" style="height: 40px; width: 95%; color: black" />
+                      <label class="formlabel">Degree</label><br />
+                    </div><br>
+          
+                    <div class="form">
+                      <input type="text" class="textbox" style="height: 40px; width: 95%; color: black" />
+                      <label class="formlabel">Field of Study</label><br />
+                    </div><br>
+          
+                    <div style="display: flex; gap: 19px">
+                      <div>
+                        <select  id="startMonth2" style="
+                          height: 60px;
+                          border-radius: 4px;
+                          padding: 0px 55px 0px 55pxpx;
+                          border: 1px solid gray;
+                          width: 132px;
+                          padding-left: 9px;
+                        ">
+                        <option selected>Start Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                        </select>
+                      </div>
+                      <div>
+                        <div>
+                          <select style="
+                            height: 60px;
+                            border-radius: 4px;
+                            padding: 0px 55px 0px 55pxpx;
+                            border: 1px solid gray;
+                            width: 132px;
+                            padding-left: 9px;
+                          " id="currentYearSelect1" onchange="updateSelectedYears1()">
+                            <option value="">Start Year</option>
+                            
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <div style="display: flex; gap: 19px; margin-top: 20px">
+                      <div>
+                        <select name="endMonth-1" id="startMonth3" style="
+                          height: 60px;
+                          border-radius: 4px;
+                          padding: 0px 55px 0px 55pxpx;
+                          border: 1px solid gray;
+                          width: 132px;
+                          padding-left: 9px;
+                        ">
+                        <option selected>End Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                        </select>
+                      </div>
+                      <div>
+                        <div>
+                          <select name="endYear-1" style="
+                            height: 60px;
+                            border-radius: 4px;
+                            padding: 0px 55px 0px 55pxpx;
+                            border: 1px solid gray;
+                            width: 132px;
+                            padding-left: 9px;
+                          " id="selectedYearSelect1">
+                            <option value="" selected>End Year</option>
+                            
+                            
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+          
+                    <input type="checkbox" id="check2" name="check2" style="margin-top: 20px; margin-left: 15px" /><label
+                      for="check2" style="margin-left: 15px; font-weight: 600; cursor: pointer">Present</label>
+          
+                    <div style="display: flex; margin-left: 179px; gap: 25px">
+                      <div>
+                        <button id="cancel-form1" type="button" style="
+                          border: none;
+                          outline: none;
+                          background-color: transparent;
+                          color: green;
+                          font-weight: 700;
+                          cursor: pointer;
+                        " class="cancel-form">
+                          Cancel
+                        </button>
+                      </div>
+          
+                      <div>
+                        <button style="
+                          border: none;
+                          outline: none;
+                          background-color: transparent;
+                          color: green;
+                          font-weight: 700;
+                          cursor: pointer;
+                        " id="save-form1">
+                          Save
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+            </div>
+
+              <input
+              type="text"
+              class="form-control education "
+              id="name6"
+               />
+          </div>
+      
+     
+
+          
+      
+      
+
+      <div class="buttons" style="padding-bottom:5px;margin-bottom:15px;display:flex;justify-content:center;gap:10px">
+        <button class="btn-submit">Next</button>
+        
+      </div>
+    </div>
+
+   
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+
+      // images profile script
+
+      $(function () {
+        $("#fileupload").change(function (event) {
+          var x = URL.createObjectURL(event.target.files[0]);
+          $("#upload-img").attr("src", x);
+          console.log(event);
+        });
+      });
+
+      // input maxlength show script
+
+      function updateCounter(inputField) {
+        // Get the current input value and its length
+        var inputValue = inputField.value;
+        var inputLength = inputValue.length;
+
+        // Define the maximum character limit
+        var maxCharacters = 25;
+
+        // Truncate the input if it exceeds the character limit
+        if (inputValue.length >= maxCharacters) {
+          inputField.value = inputValue.slice(0, maxCharacters);
+          inputValue = inputField.value;
+      }
+
+        // Update the counter text
+        document.getElementById('counter').textContent = inputLength + '/' + maxCharacters;
+    }
+
+      function updateCounter1(inputField) {
+        // Get the current input value and its length
+        var inputValue = inputField.value;
+        var inputLength = inputValue.length;
+
+        // Define the maximum character limit
+        var maxCharacters = 500;
+
+        // Truncate the input if it exceeds the character limit
+        if (inputValue.length >= maxCharacters) {
+          inputField.value = inputValue.slice(0, maxCharacters);
+          inputValue = inputField.value;
+      }
+
+        // Update the counter text
+        document.getElementById('counter1').textContent = inputLength + '/' + maxCharacters;
+    }
+
+      function updateCounter2(inputField) {
+        // Get the current input value and its length
+        var inputValue = inputField.value;
+        var inputLength = inputValue.length;
+
+        // Define the maximum character limit
+        var maxCharacters = 300;
+
+        // Truncate the input if it exceeds the character limit
+        if (inputValue.length >= maxCharacters) {
+          inputField.value = inputValue.slice(0, maxCharacters);
+          inputValue = inputField.value;
+      }
+
+        // Update the counter text
+        document.getElementById('counter2').textContent = inputLength + '/' + maxCharacters;
+    }
+
+
+
+    // country, state and city script
+
+    var config = {
+      cUrl: 'https://api.countrystatecity.in/v1/countries',
+      ckey: 'NHhvOEcyWk50N2Vna3VFTE00bFp3MjFKR0ZEOUhkZlg4RTk1MlJlaA=='
+  }
+  
+  
+  var countrySelect = document.querySelector('.country'),
+      stateSelect = document.querySelector('.state'),
+      citySelect = document.querySelector('.city')
+  
+  
+  function loadCountries() {
+  
+      let apiEndPoint = config.cUrl
+  
+      fetch(apiEndPoint, {headers: {"X-CSCAPI-KEY": config.ckey}})
+      .then(Response => Response.json())
+      .then(data => {
+          // console.log(data);
+  
+          data.forEach(country => {
+              const option = document.createElement('option')
+              option.value = country.iso2
+              option.textContent = country.name 
+              countrySelect.appendChild(option)
+          })
+      })
+      .catch(error => console.error('Error loading countries:', error))
+  
+      stateSelect.disabled = true
+      citySelect.disabled = true
+      stateSelect.style.pointerEvents = 'none'
+      citySelect.style.pointerEvents = 'none'
+  }
+  
+  
+  function loadStates() {
+      stateSelect.disabled = false
+      citySelect.disabled = true
+      stateSelect.style.pointerEvents = 'auto'
+      citySelect.style.pointerEvents = 'none'
+  
+      const selectedCountryCode = countrySelect.value
+      // console.log(selectedCountryCode);
+      stateSelect.innerHTML = '<option value="">Select State</option>' // for clearing the existing states
+      citySelect.innerHTML = '<option value="">Select City</option>' // Clear existing city options
+  
+      fetch(`${config.cUrl}/${selectedCountryCode}/states`, {headers: {"X-CSCAPI-KEY": config.ckey}})
+      .then(response => response.json())
+      .then(data => {
+          // console.log(data);
+  
+          data.forEach(state => {
+              const option = document.createElement('option')
+              option.value = state.iso2
+              option.textContent = state.name 
+              stateSelect.appendChild(option)
+          })
+      })
+      .catch(error => console.error('Error loading countries:', error))
+  }
+  
+  
+  function loadCities() {
+      citySelect.disabled = false
+      citySelect.style.pointerEvents = 'auto'
+  
+      const selectedCountryCode = countrySelect.value
+      const selectedStateCode = stateSelect.value
+      // console.log(selectedCountryCode, selectedStateCode);
+  
+      citySelect.innerHTML = '<option value="">Select City</option>' // Clear existing city options
+  
+      fetch(`${config.cUrl}/${selectedCountryCode}/states/${selectedStateCode}/cities`, {headers: {"X-CSCAPI-KEY": config.ckey}})
+      .then(response => response.json())
+      .then(data => {
+          // console.log(data);
+  
+          data.forEach(city => {
+              const option = document.createElement('option')
+              option.value = city.iso2
+              option.textContent = city.name 
+              citySelect.appendChild(option)
+          })
+      })
+  }
+  
+  window.onload = loadCountries
+  
+
+
+  // add work history 
+  const showPopupButton = document.getElementById("showPopupButton");
+  const popupForm = document.getElementById("popupForm");
+  const closeButton = document.getElementById("cancel-form");
+  const body = document.body;
+
+  showPopupButton.addEventListener("click", function (event) {
+    // Prevent the default behavior (page refresh)
+    popupForm.style.display = "block";
+    body.classList.add("popup-open");
+  });
+
+  closeButton.addEventListener("click", function () {
+    popupForm.style.display = "none";
+    body.classList.remove("popup-open");
+  });
+
+
+
+
+  const showPopupButton2 = document.getElementById("showPopupButton2");
+  const popupForm2 = document.getElementById("popupForm1");
+  const closeButton2 = document.getElementById("cancel-form1");
+  
+
+  showPopupButton2.addEventListener("click", function (event) {
+    // Prevent the default behavior (page refresh)
+    popupForm2.style.display = "block";
+    body.classList.add("popup-open");
+  });
+
+  closeButton2.addEventListener("click", function () {
+    popupForm2.style.display = "none";
+    body.classList.remove("popup-open");
+  });
+
+
+
+  
+   
+ 
+
+     //  jquery link
+     
+    </script>
+
+   
+   
+
+    
+   
+
+  <script>
+    // script.js
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth(); // 0 for January, 1 for February, etc.
+    const currentYear = currentDate.getFullYear();
+
+
+function populateYears(selectElement) {
+  for (let year = 2000; year <= currentYear; year++) {
+    const option = document.createElement('option');
+    option.value = year;
+    option.textContent = year;
+    selectElement.appendChild(option);
+  }
+}
+
+populateYears(currentYearSelect);
+
+function updateSelectedYears() {
+  const selectedYear = parseInt(currentYearSelect.value);
+
+  
+  for (let year = selectedYear + 1; year <= 2026; year++) {
+    const option = document.createElement('option');
+    option.value = year;
+    option.textContent = year;
+    selectedYearSelect.appendChild(option);
+  }
+}
+
+function showYears() {
+  const selectedYear = parseInt(selectedYearSelect.value);
+  const currentSelectedYear = parseInt(currentYearSelect.value);
+  
+  if ((selectedYear && selectedYear !== 0) && (currentSelectedYear && currentSelectedYear !== 0)) {
+    currentYearDiv.textContent = `Selected Current Year: ${currentSelectedYear}`;
+    yearsAfterDiv.innerHTML = '';
+
+    if (selectedYear >= currentSelectedYear) {
+      yearsAfterDiv.textContent = 'Please select a year before the current year.';
+    } else {
+      for (let year = selectedYear + 1; year <= 2026; year++) {
+        const yearElement = document.createElement('div');
+        yearElement.textContent = year;
+        yearsAfterDiv.appendChild(yearElement);
+      }
+    }
+  } else {
+    currentYearDiv.textContent = 'Please select both years.';
+    yearsAfterDiv.textContent = '';
+  }
+}      
+
+  const startMonthSelect = document.getElementById('startMonth');
+  const startYearSelect = document.getElementById('currentYearSelect');
+  const endMonthSelect = document.getElementById('startMonth1');
+  const endYearSelect = document.getElementById('selectedYearSelect');
+  const presentCheckbox = document.getElementById('check1');
+  
+  // Add an event listener to the "Present" checkbox
+  // Add an event listener to the "Present" checkbox
+  presentCheckbox.addEventListener('change', function () {
+    const currentDate = new Date();
+    const currentMonth = currentDate.getMonth(); // 0 for January, 1 for February, etc.
+    const currentYear = currentDate.getFullYear();
+  
+    // Check if the "Start Month" and "Start Year" are equal to the current month and year
+    const startMonth = startMonthSelect.selectedIndex - 1; // Subtracting 1 to get the month index
+    const startYear = parseInt(startYearSelect.value);
+  
+    // Check if the "End Month" and "End Year" are equal to the current month and year
+    const endMonth = endMonthSelect.selectedIndex - 1; // Subtracting 1 to get the month index
+    const endYear = parseInt(endYearSelect.value);
+  
+    if (presentCheckbox.checked) {
+      // Set the "End Month" and "End Year" selects to the current month and year
+      endMonthSelect.selectedIndex = currentMonth + 1; // Adding 1 because the first option is "End Month"
+      endYearSelect.value = currentYear.toString();
+  
+      
+        endMonthSelect.disabled = true;
+        endMonthSelect.selectedIndex = 0; // Set placeholder text
+        endYearSelect.disabled = true;
+        endYearSelect.selectedIndex = 0; // Set placeholder text
+      
+    } else {
+      // If the checkbox is unchecked, you can reset the "End Month" and "End Year" selects to their default values
+      endMonthSelect.selectedIndex = 0; // Reset to "End Month"
+      endYearSelect.selectedIndex = 0; // Reset to no selected year
+  
+      // Enable the "End Month" and "End Year" selects
+      endMonthSelect.disabled = false;
+      endYearSelect.disabled = false;
+    }
+  });
+  
+  
+  
+</script>
+
+
+
+  
+  <script>
+    
+    // script.js
+    const startMonthSelect1 = document.getElementById('startMonth2');
+    const startYearSelect1 = document.getElementById('currentYearSelect1');
+    const endMonthSelect1 = document.getElementById('startMonth3');
+    const endYearSelect1 = document.getElementById('selectedYearSelect1');
+    const presentCheckbox1 = document.getElementById('check2');
+
+function populateYears1(selectElement) {
+  for (let year = 2000; year <= 2026; year++) {
+    const option = document.createElement('option');
+    option.value = year;
+    option.textContent = year;
+    selectElement.appendChild(option);
+  }
+}
+
+
+
+populateYears1(currentYearSelect1);
+
+function updateSelectedYears1() {
+  const selectedYear1 = parseInt(currentYearSelect1.value);
+
+ 
+  
+  for (let year = selectedYear1 + 1; year <= 2026; year++) {
+    const option = document.createElement('option');
+    option.value = year;
+    option.textContent = year;
+    selectedYearSelect3.appendChild(option);
+  }
+}
+
+function showYears1() {
+  const selectedYear1 = parseInt(selectedYearSelect3.value);
+  const currentSelectedYear1 = parseInt(currentYearSelect1.value);
+  
+  if (selectedYear1 && selectedYear1 !== 0 && currentSelectedYear1 && currentSelectedYear1 !== 0) {
+    currentYearDiv1.textContent = `Selected Current Year: ${currentSelectedYear1}`;
+    yearsAfterDiv1.innerHTML = '';
+
+    if (selectedYear1 >= currentSelectedYear1) {
+      yearsAfterDiv1.textContent = 'Please select a year before the current year.';
+    } else {
+      for (let year = selectedYear1 + 1; year <= 2026; year++) {
+        const yearElement1 = document.createElement('div');
+        yearElemen1t.textContent = year;
+        yearsAfterDiv1.appendChild(yearElement1);
+      }
+    }
+  } else {
+    currentYearDiv1.textContent = 'Please select both years.';
+    yearsAfterDiv1.textContent = '';
+  }
+}
+
+presentCheckbox1.addEventListener('change', function () {
+  const currentDate = new Date();
+  const currentMonth = currentDate.getMonth(); // 0 for January, 1 for February, etc.
+  const currentYear = currentDate.getFullYear();
+
+  // Check if the "Start Month" and "Start Year" are equal to the current month and year
+  const startMonth4 = startMonthSelect1.selectedIndex - 1; // Subtracting 1 to get the month index
+  const startYear1 = parseInt(startYearSelect1.value);
+
+  // Check if the "End Month" and "End Year" are equal to the current month and year
+  const endMonth1 = endMonthSelect1.selectedIndex - 1; // Subtracting 1 to get the month index
+  const endYear1 = parseInt(endYearSelect1.value);
+
+  if (presentCheckbox1.checked) {
+    // Set the "End Month" and "End Year" selects to the current month and year
+    endMonthSelect1.selectedIndex = currentMonth + 1; // Adding 1 because the first option is "End Month"
+    endYearSelect1.value = currentYear.toString();
+
+    
+      endMonthSelect1.disabled = true;
+      endMonthSelect1.selectedIndex = 0; // Set placeholder text
+      endYearSelect1.disabled = true;
+      endYearSelect1.selectedIndex = 0; // Set placeholder text
+    
+  } else {
+    // If the checkbox is unchecked, you can reset the "End Month" and "End Year" selects to their default values
+    endMonthSelect1.selectedIndex = 0; // Reset to "End Month"
+    endYearSelect1.selectedIndex = 0; // Reset to no selected year
+
+    // Enable the "End Month" and "End Year" selects
+    endMonthSelect1.disabled = false;
+    endYearSelect1.disabled = false;
+  }
+});
+
+
+
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const selectBox = document.getElementById("showPopupButton3");
+    const options = document.getElementById("popupform3");
+    const checkboxes = document.querySelectorAll(".textbox");
+const name1 = document.getElementById("name1");
+
+    const body = document.body;
+
+    selectBox.addEventListener("click", function () {
+        options.style.display = "block";
+        body.classList.add("popup-open"); // Add class to prevent background scrolling
+    });
+
+    document.getElementById("ok-lang").addEventListener("click", function (event) {
+        updateSelectedOptions();
+        options.style.display = "none";
+        body.classList.remove("popup-open"); // Remove class to allow background scrolling
+        event.preventDefault(); // Prevent form submission
+    });
+
+    document.getElementById("lang-cancel").addEventListener("click", function () {
+        checkboxes.forEach(function (checkbox) {
+            checkbox.checked = false;
+        });
+        updateSelectedOptions();
+        options.style.display = "none";
+        body.classList.remove("popup-open"); // Remove class to allow background scrolling
+    });
+
+    
+    function updateSelectedOptions() {
+      const selectedLanguages = [];
+      checkboxes.forEach(function (checkbox) {
+        if (checkbox.checked) {
+          selectedLanguages.push(checkbox.nextSibling.textContent);
+        }
+      });
+        
+      name1.innerHTML = selectedLanguages.map((language) => `<span class="span1">${language}</span>`).join('');
+
+      console.log(name1)
+    }
+    
+
+
+});
+
+
+
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const saveButton = document.getElementById("save-form");
+    const showPopupButton = document.getElementById("showPopupButton");
+    const name5 = document.getElementById("name5");
+    const showhistorydetails = document.getElementById("showhistorydetails");
+    const formContainer = document.getElementById("popupForm");
+
+
+
+    let formIndex = 1; // Initialize the form index
+
+    saveButton.addEventListener("click", function (event) {
+
+      formContainer.style.display = "block";
+
+      event.preventDefault(); // Prevent form submission
+
+      // Get values from the form
+      
+      var companyName = document.getElementById("company-name-text").value;
+      var title = document.getElementById("company-title-text").value;
+      var currentRole = document.getElementById("company-role-text").value;
+      var startMonth = document.getElementById("startMonth").value;
+      var startYear = document.getElementById("currentYearSelect").value;
+      var endMonth = document.getElementById("startMonth1").value;
+      var endYear = document.getElementById("selectedYearSelect").value;
+      var isPresent = document.getElementById("check1").checked;
+
+      // Create a new container for the captured values
+      var newEntryContainer = document.createElement("div");
+      newEntryContainer.className = "form-values";
+      newEntryContainer.style = "width:100%;border:1px solid black";
+
+      var newElement = document.createElement("div");
+      newElement.style = "width:50%;padding-left:50px;padding-top:5px;padding-bottom:5px";
+
+      var newElement1 = document.createElement("div");
+      newElement1.style = "width:50%;padding-left:40px;padding-top:5px;padding-bottom:5px";
+
+      newElement.innerHTML = `
+          <h6 class="h6-1">${companyName}</h6>
+          <h6 class="h6-2">${title}</h6>
+          <h6 class="h6-3">${currentRole}</h6>
+          <h6 class="p-1">${startMonth} ${startYear} - ${isPresent ? "Present" : endMonth + " " + endYear}</p>
+      `;
+      newElement1.innerHTML = `
+      <div class="fa-ellip">
+        <i class="fa-solid fa-ellipsis" onclick="ellipsis()"></i>
+      </div>
+      <div class="fa-cir-minus">
+        <i class="fa-solid fa-circle-minus" onclick="deleteForm(this)"></i>
+      </div>
+      `;
+     
+
+      // Append the new element to the new entry container
+      newEntryContainer.appendChild(newElement);
+      newEntryContainer.appendChild(newElement1);
+      newEntryContainer.style = "display:flex; box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);border-radius: 7px;margin-bottom:25px";
+
+      // Append the new entry container to the showhistorydetails div
+      name5.style = "display:block;"
+      showhistorydetails.style.display = "block";
+      showhistorydetails.appendChild(newEntryContainer);
+
+      // Clear the form fields if needed
+      // document.getElementById("company-name-text").value = "";
+      // document.getElementById("company-title-text").value = "";
+      // document.getElementById("company-role-text").value = "";
+      // document.getElementById("startMonth").value = "Start Month";
+      // document.getElementById("currentYearSelect").value = "";
+      // document.getElementById("startMonth1").value = "End Month";
+      // document.getElementById("selectedYearSelect").value = "End Year";
+      // document.getElementById("check1").checked = false;
+
+      hideForm(); // Hide the popup form after saving
+    }); 
+
+    showPopupButton.addEventListener("click", function () {
+      // Display the popup form
+      formContainer.style.display = "block";
+    });
+
+    document.getElementById("cancel-form").addEventListener("click", function () {
+      hideForm();
+    });
+    document.getElementById("save-form").addEventListener("click", function () {
+      hideForm();
+    });
+
+    function hideForm() {
+      formContainer.style.display = "none";
+      // Enable form controls when hiding the form
+      enableFormControls(formContainer);
+    }
+
+    function enableFormControls(formElement) {
+      const inputs = formElement.querySelectorAll("input, select, button, checkbox");
+      inputs.forEach(input => input.removeAttribute("disabled"));
+    }
+  });
+
+
+  
+
+</script>
+
+
+
+<script>
+//   minus icon delete paricular delete profile
+    function deleteForm(deleteIcon) {
+      const formContainer = deleteIcon.closest('.form-values');
+      if (formContainer) {
+        formContainer.remove();
+      }
+    }
+  </script>
+
+
+<script>
+    
+    function ellipsis(){
+   
+
+            const formContainer = document.getElementById("popupForm");
+        if (formContainer) {
+          formContainer.style.display = "block"; 
+        }
+     
+     
+  }
+  </script>
+  
+<script>
+
+</script>
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    .container {
+      background-color: paleturquoise;
+    }
+
+    .box {
+      position: relative;
+      height: 150px;
+      width: 150px;
+      background-color: black;
+      animation-name: niki;
+      animation-duration: 6s;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes niki {
+      0% {
+        top: 0;
+        left: 0;
+      }
+
+      15% {
+        top: 0px;
+        left: 950px;
+        background-color: red;
+      }
+
+      35% {
+        top: 650px;
+        left: 950px;
+        background-color: yellowgreen;
+      }
+
+      55% {
+        top: 650px;
+        left: 0px;
+        background-color: blue;
+      }
+
+      100% {
+        top: 0px;
+        left: 0px;
+        background-color: brown;
+      }
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+  </body>
+</html>

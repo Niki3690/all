@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #input-container {
+        display: flex;
+        gap: 45px;
+      }
+
+      #input-box {
+        font-size: 24px;
+        padding: 10px;
+      }
+
+      #img-box {
+        font-size: 24px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+      }
+
+      .textbox:focus + .formlabel,
+      .textbox:not(:placeholder-shown) + .formlabel {
+        top: -0.3rem;
+        left: 0.5rem;
+        font-size: 15px;
+        background-color: white;
+      }
+
+      a.profile-link {
+        color: purple;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      input[type="file"] {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="input-container">
+      <div
+        id="img-box"
+        style="
+          height: 50px;
+          width: 50px;
+          border: 2px solid green;
+          border-radius: 50%;
+          text-align: center;
+          align-items: center;
+        "
+      >
+        <span
+          style="
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            text-align: center;
+            align-items: center;
+          "
+        ></span>
+      </div>
+
+      <input type="text" id="input-box" onkeyup="updateImage()" />
+    </div>
+
+    <script>
+      function getRandomColor() {
+        return "#" + Math.floor(Math.random() * 16777215).toString(16);
+      }
+
+      function updateImage() {
+        const inputBox = document.getElementById("input-box");
+        const imgBox = document.getElementById("img-box");
+        const inputValue = inputBox.value;
+
+        if (inputValue.length > 0) {
+          imgBox.textContent = inputValue[0].toUpperCase();
+
+          imgBox.style.backgroundColor = getRandomColor();
+          imgBox.style.color = "white";
+        } else {
+          imgBox.textContent = "";
+          imgBox.style.backgroundColor = "";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .button:hover {
+      color: purple !important;
+      background-color: white !important;
+      border: 2px solid purple !important;
+    }
+
+    .nn {
+      height: 180px;
+      width: 200px;
+      overflow: hidden;
+    }
+    .nn img:hover {
+      transform: scale(1.2);
+    }
+    .nnn {
+      visibility: hidden;
+    }
+    .oo:hover .nnn {
+      visibility: visible;
+    }
+
+    .oo:hover .nn img {
+      transform: scale(1.2);
+    }
+  </style>
+  <body>
+    <div
+      style="box-shadow: 2px 2px 5px 2px green; width: 195px; padding: 15px"
+      class="oo"
+    >
+      <div class="nn">
+        <img
+          src="https://www.somoorish.com.au/admin/product_image/2_Pretzels_and_Peanut_57-min.webp"
+          style="height: 180px; width: 200px; transition: 02s"
+        />
+      </div>
+
+      <div
+        style="margin-top: -20px; margin-left: 150px; position: relative"
+        class="nnn"
+      >
+        <i class="fa fa-eye" aria-hidden="true"></i>
+        <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+      </div>
+      <p style="font-size: 14px">
+        Pretzels and Peanuts - Milk<br />
+        Chocolate
+      </p>
+
+      <p style="font-size: 9px; padding-top: 10px; color: purple">
+        No ratings yet
+      </p>
+
+      <p style="font-weight: 700; color: purple; margin-top: -1px">$10.78</p>
+
+      <div style="margin-top: -45px">
+        <button
+          class="button"
+          style="
+            background-color: purple;
+            color: white;
+            border: none;
+            padding: 5px;
+            margin-left: 95px;
+          "
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

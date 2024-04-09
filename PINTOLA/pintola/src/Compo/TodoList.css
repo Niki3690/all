@@ -1,0 +1,17 @@
+.buttonAdd:hover {
+  background-color: green;
+  color: yellow;
+  font-weight: 600;
+}
+
+.buttonRemove:hover {
+  background-color: green;
+  color: yellow;
+  font-weight: 600;
+}
+
+input:hover {
+  background-color: green;
+  color: yellow;
+  font-weight: 600;
+}

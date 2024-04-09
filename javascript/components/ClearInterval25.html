@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    #h1 {
+      font-size: 95px;
+      text-align: center;
+      color: rebeccapurple;
+      font-weight: 700;
+    }
+  </style>
+
+  <body>
+
+    <!-- [clearInterval() method] -->
+    <h1 id="h1"></h1>
+
+    <center>
+      <button
+        class="button"
+        onclick="Button()"
+        style="
+          padding: 12px;
+          padding-left: 45px;
+          padding-right: 45px;
+          background-color: rebeccapurple;
+          color: white;
+          font-size: 18px;
+          font-weight: 700;
+        "
+      >
+        Stop
+      </button>
+    </center>
+  </body>
+
+  <script>
+    var my = setInterval(Count, 1000);
+    var c = 0;
+
+    function Count() {
+      document.getElementById("h1").innerText = c;
+      c++;
+    }
+
+    function Button() {
+      clearInterval(my);
+    }
+  </script>
+</html>

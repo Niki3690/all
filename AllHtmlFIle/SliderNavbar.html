@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+  </style>
+  <body>
+    <div id="mySidenav" class="sidenav">
+      <a
+        href="#"
+        class="closebtn"
+        onclick="closeNav()"
+        style="font-size: 30px; cursor: pointer"
+        >&times;</a
+      >
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Chat</a>
+      <a href="#">Client</a>
+    </div>
+
+    <div id="mySidenav1" class="sidenav">
+      <h2>Here Animation Part</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+        velit ratione quae eos voluptate! Dolore voluptatem quaerat nam pariatur
+        nemo ipsum a! Recusandae quibusdam earum temporibus facere incidunt
+        soluta, harum eos! Enim accusamus suscipit velit voluptatem, quibusdam
+        maiores mollitia non sit officiis quas hic earum?
+      </p>
+    </div>
+
+    <span style="font-size: 30px; cursor: pointer" onclick="openNav()"
+      >&#9776; open</span
+    >
+
+    <script>
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("mySidenav1").style.width = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = 0;
+        document.getElementById("mySidenav1").style.width = 0;
+      }
+    </script>
+  </body>
+</html>

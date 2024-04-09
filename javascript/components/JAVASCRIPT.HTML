@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="shortcut icon" href="#" />
+  <title>JAVASCRIPT</title>
+</head>
+
+<body>
+  <p id="body"></p>
+  <p id="body1"></p>
+  <!-- <div style="display: flex;gap:15px">
+    <div id="Box" onclick="fun()"  style="border: 4px solid blue;width: 150px;height: 150px;background-color: palegreen;margin-top: 145px;border-radius: 15px 15px"></div> -->
+
+  <!-- <div id="Box" oncontextmenu="fuun()"  style="border: 4px solid blue;width: 150px;height: 150px;background-color: palegreen;margin-top: 145px;border-radius: 15px 15px">
+      </div> -->
+  <!-- 
+      <div id="Box" ondblclick="fuuun()"  style="border: 4px solid blue;width: 150px;height: 150px;background-color: palegreen;margin-top: 145px;border-radius: 15px 15px">
+      </div> -->
+
+  <!-- <div id="Box" onmousedown="fuuuun()"  style="border: 4px solid blue;width: 150px;height: 150px;background-color: palegreen;margin-top: 145px;border-radius: 15px 15px">
+      </div> -->
+
+  <!-- <div id="Box" onmouseup="fuuuuun()"  style="border: 4px solid blue;width: 150px;height: 150px;background-color: palegreen;margin-top: 145px;border-radius: 15px 15px">
+      </div> -->
+  <!-- 
+  <div id="Box" onmouseover="fuuuuuun()"
+    style="border: 4px solid blue;width: 150px;height: 150px;background-color: palegreen;margin-top: 145px;border-radius: 15px 15px">
+  </div>
+  </div> -->
+
+  <!-- Keybord event in HTML/JS -->
+
+  <!-- <div class="section">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-5">
+            <div
+              class="box has-background-danger-light shadow-3xl shadow-orange-950 mt-24"
+              style="border: 25px solid white"
+            >
+              <div id="form">
+                <h4
+                  class="is-size-4 has-text-centered mb-12 has-text-weight-bold"
+                  id="h1"
+                >
+                  Keyboard Event
+                </h4>
+                <p class="font-medium">OnKeyDown:</p>
+                <input
+                  type="text"
+                  class="input is-link mb-5"
+                  onkeydown="alert(this.value)"
+                />
+                <p class="font-medium">OnKeyUp:</p>
+                <input
+                  type="text"
+                  class="input is-link mb-5"
+                  onkeyup="alert(this.value)"
+                />
+                <p class="font-medium">OnKeyPress:</p>
+                <input
+                  type="text"
+                  class="input is-link"
+                  onkeypress="alert(this.value)"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <!-- <button class="button is-link" onclick="openWindow()">Open window</button>
+    <button class="button is-link" onclick="closeWindow()">Close window</button> -->
+
+  <!-- <div class="section">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-5">
+          <div class="box">
+
+            <img
+              src="https://images.unsplash.com/photo-1585016495481-91613a3ab1bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80"
+              style="height: 300px;width:430px" class="grayscale" id="img1"/>
+
+            <div class="text-center bg-slate-100 mt-2 ml-[-22px] w-[470px] h-[45px] pt-2 text-xl font-bold" >Feel Nature
+            </div>
+          </div>
+
+
+          <div class="box">
+            <img
+              src="https://images.unsplash.com/photo-1520962922320-2038eebab146?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+              style="height: 300px;width:430px" class="grayscale"  id="img2"/>
+              
+
+            <div class="text-center bg-slate-100 mt-2 ml-[-22px] w-[470px] h-[45px] pt-2 text-xl font-bold">Path Like
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  </div>
+</body>
+
+<script>
+  // VAR------(if we declare a variable from var,then we can also declare it again with the same name,and if we want to re-assign its value then we can do that too..)
+
+  // LET-----(if we declare a variable with let then we cannot declare it again with the same name,but can re-assign its value..)
+
+  // Const------(if we declare variable with const,then we can neither declare it again nor can re-assign its value..)
+
+  // var myName = "Niki";
+  // var myName = "Patel";
+  // document.write(myName);
+
+  // let myName="Niki"
+  // // let myName="Patel"
+  // myName="Patel"
+  // document.write(myName);
+
+  // const myName="Niki";
+  // myName="patel";
+  // document.write(myName)
+
+  // document.write("First text" + "<br><br>");
+  // document.write("Second text" + "<br><br>");
+  // document.write("<i><b>Text of js</b></i>");
+
+  // var firstName = "ArshNik";
+  // var firstName = "Niki";
+
+  // document.write(firstName)
+
+  // var firstname, lastname, myage;
+  // firstname = "NIKI";
+  // lastname = "PATEL";
+  // myage = 40;
+  // document.write(firstname + "<br>");
+  // console.log("firstname");
+  // document.write(lastname + "<br>");
+  // document.write(" I am ");
+  // document.write(myage);
+  // document.write(" years old.");
+
+  // var x = "patel niki";
+  // document.write(x);
+  // document.write("<br><br>");
+
+  // document.write(typeof x);
+
+  // var name = ["apple", "Mango", "Graps", "Watermelon"];
+  // document.write(name);
+  // console.log(name);
+
+  // ----------------------------------------------------------------------------
+
+  //  OPERATOR
+  /*Arithmetic Operators:
++,-,/,*,++,--,etc...*/
+
+  /* Assignment Opeartor:
+=,+=,-=,/=,etc...*/
+
+  /*Comparison Operator:
+<,>,<=,==,etc...*/
+
+  /*Logical Operator:
+&&,||,! */
+
+  /*Conditional Operator:
+?,:*/
+
+  // -------------------------------------------------------------------------
+
+  // ARITHMATIC OPERATORS
+
+  // var a = 14;
+  // var b = 55;
+  // var c = a + b;
+  // a--;
+  // b++;
+
+  // document.write(a + "<br>");
+  // document.write(b + "<br>");
+  // document.write(a + b + "<br>");
+  // document.write(a - b + "<br>");
+  // document.write(a * b + "<br>");
+  // document.write(a / b + "<br>");
+
+  // ------------------------------------------------------------------------
+
+  // ASSIGNMENT OPERATORS
+
+  // var a = 6;
+  // var b = 5;
+
+  // document.write((a += b));
+  // document.write((a -= b));
+
+  // document.write(a);
+
+  // ------------------------------------------------------------------------
+
+  // ERROR in Console.log 
+  //   var a=5;
+  //   var b=6;
+  //   console.log("A:->" + a);
+  //   console.log("B:->" + b);
+  //   console.log("C:->" + c);
+
+  // ----------------------------------------------------------------------------
+
+  // Comparision operator:->
+
+  // == EqualTo
+  // === EqualValue and EqualType
+  // != Not Equal
+  // !== NotEqualValue or NotEqualType
+  // > Greaterthan
+  // < Lessthan
+  // >= Greaterthan or Equalto
+  // <= Lessthan or Equalto
+
+  // var N=10;
+  // var D=15;
+  // console.log(N == D);
+  // console.log(N === D);
+  // console.log(N != D);
+  // console.log(N !== D);
+  // console.log(N > D);
+  // console.log(N < D);
+  // console.log(N >= D);
+  // console.log(N <= D);
+
+  // ----------------------------------------------------------------------------
+
+  // Condition Operator:->
+
+  // If statement:
+
+  // var A = 2;
+  // var B = 6;
+
+  // if (A == B) {
+  //   document.write("This is True.😍");
+  // } else {
+  //   document.write("This is False.😢");
+  // }
+
+  // if (A === B) {
+  //   document.write("This is True.😍");
+  // } else {
+  //   document.write("This is False.😢");
+  // }
+
+  // if (A != B) {
+  //   document.write("This is True.😍");
+  // } else {
+  //   document.write("This is False.😢");
+  // }
+
+  // if (A !== B) {
+  //   document.write("This is True.😍");
+  // } else {
+  //   document.write("This is False.😢");
+  // }
+
+  // if (A > B) {
+  //   document.write("This is True.😍");
+  // } else {
+  //   document.write("This is False.😢");
+  // }
+
+  // if (A < B) {
+  //   document.write("This is True.😍");
+  // } else {
+  //   document.write("This is False.😢");
+  // }
+
+  // if (A >= B) {
+  //   document.write("This is True.😍");
+  // } else {
+  //   document.write("This is False.😢");
+  // }
+
+  // if (A <= B) {
+  //   document.write("This is True.😍");
+  // } else {
+  //   document.write("This is False.😢");
+  // }
+
+  // Logical Operator:->
+
+  // var age = 45;
+
+  // if (age >= 18 && age <= 40) {
+  //   document.write("You are allowed.🤩");
+  // } else {
+  //   document.write("you are not allowed.😓");
+  // }
+
+  // var x = 5;
+  // var y=15;
+
+  // if (x == 5 || y == 15) {
+  //   document.write("You are allowed.🤩");
+  // } else {
+  //   document.write("you are not allowed.😓");
+  // }
+
+  // IF/Else:--->
+
+  // var x = 5;
+  // var y = 10;
+  // if (x == y) {
+  //   document.write("Good");
+  // } else {
+  //   document.write("Bad");
+  // }
+
+  // If/ElseIF:--->
+
+  // var time = 2;
+  // if (time > 1 && time < 11) {
+  //   document.write("GOOD MORNING");
+  // } else if (time > 11 && time < 15) {
+  //   document.write("GOOD AFTERNOON");
+  // } else if (time > 15 && time < 18) {
+  //   document.write("GOOD EVENING");
+  // } else {
+  //   document.write("GOOD NIGHT");
+  // }
+
+  // Ternar operator:--->
+  // var age = 19;
+  // var drive = age >= 18 ? "Yes You Can Drive" : "No You Can't Drive";
+
+  // document.write(drive);
+  // Switch Opeartaor:--->
+
+  // var month = 5;
+  // switch (month) {
+
+  //   case 1:
+  //     document.write("January");
+  //     break;
+  //   case 2:
+  //     document.write("Febuary");
+  //     break;
+  //   case 3:
+  //     document.write("March");
+  //     break;
+  //   case 4:
+  //     document.write("April");
+  //     break;
+  //   case 5:
+  //     document.write("May");
+  //     break;
+  //   case 6:
+  //     document.write("June");
+  //     break;
+  //   case 7:
+  //     document.write("July");
+  //     break;
+  //   case 8:
+  //     document.write("September");
+  //     break;
+  //   case 9:
+  //     document.write("Augest");
+  //     break;
+  //   case 10:
+  //     document.write("Octomber");
+  //     break;
+  //   case 11:
+  //     document.write("November");
+  //     break;
+  //   case 12:
+  //     document.write("december");
+  //     break;
+
+  //   default:
+  //     document.write("Plz enter valid months");
+  // }
+
+  // AlertBox:--->
+  // var a = 50;
+  // var b = 50;
+  // if (a > b) {
+  //   alert("A is Greater than B");
+  // } else {
+  //   alert("B is Greater than A");
+  // }
+
+  // Confirm box:--->
+
+  // var a = confirm("ARE YOU SURE TO SAVE THIS PAGE?🤗");
+  // alert(a);
+  // if (a) {
+  //   alert("OHHH THANKS FOR SAVE ME!🥰");
+  // } else {
+  //   alert("IT's OKAY");
+  // }
+
+  // Prompt box
+
+  // var a = prompt("ENTER YOUR NAME?");
+  // document.write(a)
+
+  // Function in js:--->
+
+  // function MyName() {
+  //   document.write("I Am Here!" + "<br><br>");
+  //   document.write("You Are Here!" + "<br><br>");
+  //   document.write("Niki Is Here!" + "<br><br>");
+  //   document.write("ArshNik Is Here!" + "<br><br>");
+  // }
+  // MyName();
+  // MyName();
+  // MyName();
+  // MyName();
+
+  // Functions with Parameters in js:--->
+
+  // function fullName(fname = "abc ", lname = " xyz") {
+  //   document.write("Hellllllo " + fname + lname);
+  // }
+  // fullName("ABC " , " XYZ");
+
+  // function sum(a, b) {
+  //   document.write(a + b + " ");
+  // }
+
+  // sum(25, 25);
+  // sum(12, 12);
+  // sum(10, 5);
+  // sum(3, 13);
+
+  // Function with Return Value in Js
+
+  // function fullName(fname, lname) {
+  //   document.write(fname + " " + lname + "<br>");
+  // }
+
+  // fullName("ABC", "abc");
+  // fullName("XYZ", "xyz");
+
+
+
+
+  // Global & Local Variable in Js
+
+  // var a = "NIKI PATEL ";
+  // document.write(a);
+
+  // function ABC() {
+  //   var b = "ABC XYZ ";
+  //   document.write(b);
+  // }
+  // ABC();
+
+
+
+
+
+
+
+
+
+
+
+  // Mouse Event(OnClick,OndbClick,OnMouseover,OnMouseOut) :--->
+  // upperside html content
+
+  // function fun(){
+  //   alert("Event Activated")
+  // }
+
+  // function fuun(){
+  //   alert("Event Activated")
+  // }
+
+  // function fuuun(){
+  //   alert("Event Activated")
+  // }
+
+  // function fuuuun(){
+  //   alert("Event Activated")
+  // }
+
+  // function fuuuuun(){
+  //   alert("Event Activated")
+  // }
+
+  // function fuuuuuun(){
+  //   alert("Event Activated")
+  // }
+
+  // Keyboard Keyword
+
+  // Window Events
+
+  // function openWindow() {
+  //   window.open(
+  //     "https://www.w3schools.com/html/",
+  //     "",
+  //     "width=400,height=400,left=500"
+  //   );
+  // }
+
+  // black-whighte image using html css
+
+  // document.getElementById("img1").onmouseover = abc;
+  // function abc(){
+  //   document.getElementById("img1").style.filter="grayscale(0%)";
+  // }
+  // document.getElementById("img1").onmouseout = xyx;
+  // function xyx(){
+  //   document.getElementById("img1").style.filter="grayscale(100%)";
+  // }
+
+  // document.getElementById("img2").onmouseover = pm;
+  // function pm(){
+  //   document.getElementById("img2").style.filter="grayscale(0%)";
+  // }
+  // document.getElementById("img2").onmouseout = npx;
+  // function npx(){
+  //   document.getElementById("img2").style.filter="grayscale(100%)";
+  // }
+
+
+
+  // Loops in js
+  // For/While/DoWhile
+
+
+
+
+
+
+
+  // // ForLoop
+  // for (let i = 1; i <= 5; i++) {
+  //   document.write(i +"<br>")
+  // }
+
+
+  // // WhileLoop
+  // let i=1;
+  // while(i<=5){
+  //   document.write(i +"<br>");
+  // i++
+  // }
+  // document.write("Done")
+
+
+
+  // // DoWhileLoop
+  // let i=10;
+  // do{
+  //   document.write(i+"<br>")
+  //   i++;
+
+  // }while(i<=5);
+
+
+
+  // // FORLOOP EXAMPLE
+
+  // for(let i=1;i<=20;i++){
+  //   if(i%2 ===0)
+  //   document.write(i + "<br>")
+  // } 
+
+
+
+  // // DOWHILELOOP EXAMPLE
+
+  // {
+  // let password;
+  // do{
+  //  password = prompt("What is password?")
+  // }while(password !== "Niki");
+  // }
+
+
+
+  // Break & Continue Statement
+
+  // // CONTINUE STATEMENT
+  // for(let counter =1;counter<=10; counter++){
+  //   if(counter==5){
+  //     continue;
+  //   }
+  //   if(counter==7){
+  //     continue;
+  //   }
+  //   document.write(counter);
+  //   document.write("<br>");
+  // }
+
+
+
+  // BREAK STATEMENT
+  // for (let counter = 1; counter <= 10; counter++) {
+
+  //   if (counter == 7) {
+  //     break
+  //   }
+  //   document.write(counter);
+  //   document.write("<br>");
+  // }
+  // document.write("Done");
+
+
+  //ARRAY IN JAVASCRIPT
+
+  // let subject1="Maths";
+  // let subject2="English";
+  // let subject3="Science";
+  // let subject4="Socail-Study";
+
+
+  // let subject=["Maths"," English"," Science"," Social-Study"]
+
+  // // document.write(subject);
+  // // document.write(subject[2]);
+
+  // subject[2]="Gujarati";
+  // document.write(subject[2]);
+
+
+  // Array Methods in Javascript
+
+
+
+  //   // ArrayLengh
+  //   const fruits = ["Banana", "Orange", "Apple", "Mango","Kiwi"];
+  // let size = fruits.length;
+  // document.write(size)
+
+
+
+  // // toString()
+  // const fruits = ["Banana", "Orange", "Apple", "Mango","Kiwi"];
+  // document.getElementById("body").innerHTML = fruits.toString();
+
+
+  // // join()
+  // const fruits = ["Banana", "Orange", "Apple", "Mango","Kiwi"];
+  //  document.getElementById("body").innerHTML = fruits.join( " * ");
+
+
+  // // pop()
+  // const fruits = ["Banana", "Orange", "Apple", "Mango","Kiwi"];
+  //  document.getElementById("body").innerHTML = fruits;
+  //  fruits.pop();
+  //  document.getElementById("body1").innerHTML = fruits;
+
+
+  // // Push()
+  // const fruits = ["Banana", "Orange", "Apple", "Mango","Kiwi"];
+  //  document.getElementById("body").innerHTML = fruits;
+  //  fruits.push("Graps");
+  //  document.getElementById("body1").innerHTML = fruits;
+
+
+  // Sift()
+  // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  // document.getElementById("body").innerHTML = fruits;
+  // fruits.shift();
+  // document.getElementById("body1").innerHTML = fruits;
+
+
+  // // unshift() 
+
+  // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  // document.getElementById("body").innerHTML = fruits;
+  // fruits.unshift("Lemon");
+  // document.getElementById("body1").innerHTML = fruits;
+
+
+  // // Bracket Indexing
+
+  // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  // document.getElementById("body").innerHTML = fruits;
+  // fruits[2] = "Kiwi";
+  // document.getElementById("body1").innerHTML = fruits;
+
+
+
+  // // Sort()
+
+  // const fruits = ["Banana", "Orange", "Apple", "Mango","Kiwi"];
+  // document.getElementById("body").innerHTML = fruits;
+
+  // fruits.sort();
+  // document.getElementById("body1").innerHTML = fruits;
+
+
+  // // Sort in Reverse
+
+  // const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  // document.getElementById("body").innerHTML = fruits;
+  // // First sort the array
+  // fruits.sort();
+
+  // // Then reverse it:
+  // fruits.reverse();
+
+  // document.getElementById("body1").innerHTML = fruits;
+
+
+
+  // concat() Method
+
+  // let arra1=["Lion","Cat"];
+  // let arra2=["Dog","Tiger","Laperd"];
+  // let chilren = arra1.concat(arra2);
+  // document.getElementById("body").innerHTML=chilren;
+
+
+  // const arr1 = ["Cecilie", "Lone"];
+  // const arr2 = ["Email", "Tobias", "Linus"];
+  // const arr3 = ["Robin"];
+
+  // const children = arr1.concat(arr2, arr3); 
+  // document.getElementById("body1").innerHTML = children;
+
+
+  // // constructor Property
+
+  // let fruits =["Banana","Orange","Apple","Graps","Kiwi"];
+  // let text=fruits.constructor;
+  // document.getElementById("body").innerHTML=text;
+
+
+
+  // fill() Method
+
+  // let fruits = ["Banana", "Orange", "Apple", "Mango", "Graps"];
+  // document.getElementById("body").innerHTML = fruits.fill("kiwi");
+
+  // let fruits = ["Banana", "Orange", "Apple", "Mango", "Graps"];
+  // document.getElementById("body").innerHTML = fruits.fill("kiwi",1,3);
+
+
+
+  // filter() method
+  // const ages = [12,45,96,50];
+  // document.getElementById("body1").innerHTML = ages.filter(checkAdult);
+
+
+  // function checkAdult(ages){
+  //   return ages>=18;
+  // }
+
+
+  // flat() Method
+
+  // let myArr =[[1,2] ,[3,4,5] ,[6,7]];
+
+  // let newMyArr = myArr.flat(2);
+  // document.getElementById("body").innerHTML=newMyArr;
+
+
+  // flatMap()
+  // let myArr=[1,2,3,4,5,6,7,8,9,0];
+  // let NewArr = myArr.flatMap((x)=>x * 2);
+  // document.getElementById("body1").innerHTML=NewArr
+
+
+  // ForEach() Method
+  // let text = "";
+  // let fruits=["Red","Blue","Black","Orange"];
+  // fruits.forEach(myFun);
+
+  // document.getElementById("body1").innerHTML=text;
+
+  // function myFun(item,index){
+  //   text +=index + ": " + item + "<br>";
+  // }
+
+
+//   let fruits =["A","B","C","D","E"];
+// document.getElementById("body1").innerHTML=fruits.includes("N");
+
+
+// let fruits =["A","B","C","D","E"];
+// document.getElementById("body1").innerHTML=fruits.includes("D");
+
+
+// indexOf() Method
+// let fruits=["A","B","C","D","E"];
+// let index = fruits.indexOf("C");
+// document.getElementById("body1").innerHTML=index;
+
+
+// let fruits=["A","B","C","D","E","D"];
+// let index = fruits.indexOf("D");
+// document.getElementById("body1").innerHTML=index;
+
+
+
+// join() Method
+
+// const fruits = ["One", "Two", "Three", "Four"];
+// let text = fruits.join(" As Well As ");
+// document.getElementById("body").innerHTML = text;
+
+
+// lastIndexOf() Method
+
+// const fruits = ["1","2","3","4","5","6"];
+// let index = fruits.lastIndexOf("4");
+
+// document.getElementById("body1").innerHTML = index;
+
+
+
+// length()
+
+// const key = ["D", "A", "R", "S", "H"];
+// let length =  key.length;
+
+// document.getElementById("body").innerHTML = length;
+
+
+// Array.map()
+
+// let numbers = [4, 9, 16, 25,49];
+// document.getElementById("body1").innerHTML=numbers.map(Math.sqrt);
+
+
+// // pop() Method
+
+// const num = ["1", "2", "3", "4"];
+// num.pop();
+// document.getElementById("body").innerHTML = num;
+
+
+// Push() Method
+
+// const num = ["1", "2", "3", "4"];
+// num.push("Kiwi");
+// document.getElementById("body").innerHTML = num;
+
+
+
+// Reduce JS
+
+// let nums=[123,25,58];
+// document.getElementById("body").innerHTML=nums.reduce(fun);
+
+// function fun(total,num){
+//   return total-num;
+// }
+
+
+// round + reduce method
+
+// let numbers=[15.4, 2.2, 1.2, 4.6];
+
+// document.getElementById("body").innerHTML=numbers.reduce(nuum,0);
+
+// function nuum(total,num){
+//   return total +Math.round(num);
+// }
+
+
+// reverse()
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango" ,"Kiwi"];
+// document.getElementById("body").innerHTML = fruits.reverse();
+
+// Shift()
+
+// let fruits = ["AAA", "BBB","CCC"];
+// fruits.shift();
+// fruits.shift();
+// document.getElementById("body1").innerHTML = fruits;
+
+
+
+// const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+// const citrus = fruits.slice(2,4);
+
+// document.getElementById("body1").innerHTML = citrus;
+
+
+// Slice method
+
+// const str = 'The quick brown fox jumps over the lazy dog.';
+// document.getElementById("body1").innerHTML = str.slice(31);
+// document.getElementById("body1").innerHTML = str.slice(4, 19);
+// document.getElementById("body1").innerHTML = str.slice(-4);
+// document.getElementById("body1").innerHTML = str.slice(-9, -5);
+
+
+
+// JavaScript Booleans
+
+document.getElementById("body1").innerHTML = Boolean(75 > 25);
+</script>
+
+</html>

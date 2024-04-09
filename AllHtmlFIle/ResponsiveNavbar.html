@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Navbar</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rosybrown;
+      color: white;
+    }
+
+    .flex > nav > ul {
+      list-style: none;
+      display: flex;
+    }
+
+    .flex > nav > ul > li > a {
+      text-decoration: none;
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+      display: block;
+    }
+
+    .flex > nav > ul > li > a:hover {
+      background-color: white !important;
+      color: black !important;
+    }
+
+   button {
+      padding: 10px 20px;
+      border: 1px solid rosybrown;
+      cursor: pointer;
+    }
+
+  button:hover {
+      background-color: rosybrown;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .burger i {
+      display: none;
+    }
+
+    .menu {
+      background-color: rosybrown;
+      height: 100vh;
+      width: 320px;
+      float: right;
+      display: none;
+    }
+
+    .menu > nav > ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    .menu > nav > ul > li > a {
+      text-decoration: none;
+      padding: 10px;
+      display: block;
+      color: white;
+      font-size: 20px;
+    }
+    @media (max-width: 810px) {
+      .flex,
+      .btn {
+        display: none;
+      }
+    
+      .burger i {
+        display: block;
+        font-size: 22px;
+      }
+    
+      .menu {
+        display: none;
+      }
+    
+      .burger .cross {
+        display: none;
+      }
+    
+      button {
+        display: block;
+        text-align: center;
+        margin-top: 15px;
+        margin: 10px auto;
+      }
+    
+      .menu a:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+    
+
+    @media (min-width: 811px) {
+      .burger i {
+        display: none !important;
+      }
+
+      .menu {
+        display: none !important;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+        <h1>Navbar</h1>
+      </div>
+
+      <div class="flex">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Internship</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="btn">
+        <button>Sign In</button>
+        <button>Sign Up</button>
+      </div>
+
+      <div class="burger">
+        <i class="bars fa-solid fa-bars" onclick="Open()" id="bars"></i>
+        <i class="cross fa-solid fa-xmark" onclick="Close()" id="cross"></i>
+      </div>
+    </div>
+
+    <div class="menu" id="menu">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Career</a></li>
+          <li><a href="#">Internship</a></li>
+
+          <button>Log In</button>
+          <button>Log Out</button>
+        </ul>
+      </nav>
+    </div>
+
+    <script>
+      function Open() {
+        document.getElementById("menu").style.display = "block";
+        document.getElementById("bars").style.display = "none";
+        document.getElementById("cross").style.display = "block";
+      }
+
+      function Close() {
+        document.getElementById("menu").style.display = "none";
+        document.getElementById("bars").style.display = "block";
+        document.getElementById("cross").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OnmouseEnter-OnmouseLeave</title>
+  </head>
+  <body>
+    <div class="container"></div>
+    <h1 onmouseenter="Enter()" onmouseleave="Leave()" id="name">
+      My name is Anshi
+    </h1>
+
+    <script>
+      function Enter() {
+        document.getElementById("name").style.fontSize = "45px";
+      }
+
+      function Leave() {
+        document.getElementById("name").style.fontSize = "20px";
+      }
+    </script>
+  </body>
+</html>

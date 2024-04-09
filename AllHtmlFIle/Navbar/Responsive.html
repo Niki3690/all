@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: palevioletred;
+    }
+
+    .logo h1 {
+      color: white;
+    }
+
+    nav > ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav > ul > li > a {
+      text-decoration: none;
+      padding: 20px;
+      display: block;
+      color: white;
+      font-size: 20px;
+    }
+
+    nav > ul > li > a:hover {
+      background-color: blue;
+      color: white;
+    }
+
+    .btn > button {
+      padding: 7px 20px;
+      border: 1px solid white;
+    }
+    .btn > button:hover {
+      background-color: palevioletred;
+      color: white;
+      border: 1px solid white;
+    }
+
+    .main {
+      background-color: palevioletred;
+      height: 100vh;
+      width: 300px;
+      float: right;
+      display: none;
+    }
+
+    .burger i {
+      font-size: 23px;
+      color: white;
+    }
+
+    .list > ul {
+      list-style: none;
+      text-align: center;
+    }
+
+    .list > ul > li > a {
+      text-decoration: none;
+      color: white;
+      padding: 15px;
+      display: block;
+      font-size: 20px;
+    }
+
+    @media (max-width: 670px) {
+      .flex,
+      .btn,
+      .xmark {
+        display: none;
+      }
+
+      .list > ul {
+        list-style: none;
+        text-align: center;
+      }
+
+      .list > ul > li > a {
+        text-decoration: none;
+        color: white;
+        padding: 15px;
+        display: block;
+        font-size: 20px;
+      }
+    }
+
+    @media (min-width: 671px) {
+      .burger i {
+        display: none !important;
+      }
+
+      .main {
+        display: none !important;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="logo">
+        <h1>NavBar</h1>
+      </div>
+
+      <div class="flex">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="btn">
+        <button>SignIn</button>
+      </div>
+
+      <div class="burger">
+        <i class="bars fa-solid fa-bars" id="bars" onclick="Bars()"></i>
+        <i class="xmark fa-solid fa-xmark" id="xmark" onclick="Xmark()"></i>
+      </div>
+    </div>
+
+    <div class="main" id="main">
+      <div class="list">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Career</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      function Bars() {
+        document.getElementById("main").style.display = "block";
+        document.getElementById("xmark").style.display = "block";
+        document.getElementById("bars").style.display = "none";
+      }
+
+      function Xmark() {
+        document.getElementById("main").style.display = "none";
+        document.getElementById("xmark").style.display = "none";
+        document.getElementById("bars").style.display = "block";
+      }
+    </script>
+  </body>
+</html>

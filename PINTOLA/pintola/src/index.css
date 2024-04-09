@@ -1,0 +1,47 @@
+.neww:hover {
+  color: black;
+}
+
+.nnnn:hover {
+  color: black;
+  cursor: auto;
+}
+
+.signnn:hover {
+  color: #f06e27 !important;
+  font-weight: 500;
+}
+
+.colooor:hover {
+  background-color: #f06e27 !important;
+  color: white;
+  border: none !important;
+}
+
+::placeholder {
+  color: black !important;
+}
+
+input:hover {
+  color: black !important;
+}
+P:hover {
+  color: black !important;
+}
+
+.sppp p:hover {
+  color: #f06e27 !important;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  accent-color: black;
+}
+
+input:hover {
+  background-color: transparent !important;
+}
+
+.gray {
+  background-color: red;
+}

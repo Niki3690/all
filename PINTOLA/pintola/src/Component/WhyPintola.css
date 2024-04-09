@@ -1,0 +1,71 @@
+.why img {
+  width: 100%;
+  height: 436px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.ffflex {
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  padding-left: 105px;
+  padding-right: 15px;
+  margin-top: 35px;
+}
+
+.ffflex img {
+  height: 120px;
+}
+
+.ffflex p {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.leftImg {
+  display: flex;
+  gap: 85px;
+  justify-content: center;
+}
+
+.leftImg img {
+  height: 300px;
+  width: 310px;
+}
+
+.leftImg .title {
+  font-size: 25px;
+  font-weight: 700;
+  text-align: left;
+  margin-bottom: 15px;
+  margin-top: 65px;
+}
+
+.leftImg p {
+  font-size: 15px;
+}
+
+* {
+  background-color: #fcf7ef;
+}
+
+.imagess {
+  display: flex;
+  gap: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+  margin-top: 15px;
+}
+
+.imagess img {
+  width: 320px;
+  height: 260px;
+}
+
+.imggg {
+  width: 100%;
+
+  padding-top: 45px;
+}

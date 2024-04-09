@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- [setTimeout method in JavaScript] -->
+    <center>
+      <button
+        class="button"
+        onclick="test()"
+        style="text-align: center; margin-top: 115px"
+      >
+        TRY THIS!
+      </button>
+    </center>
+  </body>
+
+  <script>
+    function test() {
+      setTimeout(function () {
+        // alert("HI");
+
+        document.write(
+          "<h1 style=text-align:center;margin-top:115px>HEY I M CHANGE!</h1>"
+        );
+      }, 2500);
+    }
+  </script>
+</html>

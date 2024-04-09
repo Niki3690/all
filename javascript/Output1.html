@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <title>Output</title>
+  </head>
+
+  <body>
+    <div class="columns is-centered" style="margin-top: 45px">
+      <div class="column is-5">
+        <div class="box">
+          <center>
+            <h3 class="is-size-3" id="demo">Good Morning</h3>
+          </center>
+          <br />
+
+          <center>
+            <button class="button is-warning" onclick="demo()">
+              CLick me!
+            </button>
+          </center>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+    function demo() {
+      document.getElementById("demo").innerHTML = "Good Night!";
+    }
+  </script>
+</html>
