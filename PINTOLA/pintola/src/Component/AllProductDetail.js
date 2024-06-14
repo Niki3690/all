@@ -76,7 +76,7 @@ export { AllProductDetail };
 let Insta = [
   {
     images:
-      "https://scontent.cdninstagram.com/v/t51.29350-15/397361947_706948764770441_1522412699295038699_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=c4dd86&_nc_ohc=274GLoHsJbkAX-iQCsV&_nc_ht=scontent.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AfBL_cXUoL9tnpDMGJ-TYYlcM0bsgK_tPd6KCg_YzE3TyQ&oe=65478258",
+      "https://www.pintola.in/cdn/shop/products/1_400x.png?v=1670670079",
   },
   {
     images:

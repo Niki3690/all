@@ -46,7 +46,7 @@ const Main = () => {
       <Pintola.Provider
         value={{ sold: sold, setSold: setSold, Add: Add, Remove: Remove }}
       >
-        +
+        
         <BrowserRouter>
           <BreadCrumbPath />
           <Header />

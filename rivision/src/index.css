@@ -1,0 +1,14 @@
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: 700;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 1024px) {
+  .nnn {
+    grid-template-columns: 250px 250px;
+  }
+}
